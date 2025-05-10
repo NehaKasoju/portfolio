@@ -27,45 +27,46 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('images/neha-bg.png');">
-        <div class="absolute inset-0 bg-black/50"></div>
-        <div class="relative z-10 text-center text-white">
-            <h1 class="text-5xl md:text-7xl font-bold mb-4 font-serif">Neha Kasoju</h1>
-            <p class="text-xl md:text-2xl">Mechatronics Engineering Student</p>
-            <p class="mt-4 text-lg">Building equity through technology</p>
-        </div>
-    </section>
-
-    <!-- About & Education Section -->
-    <section id="about" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12">
-                <!-- About -->
-                <div class="space-y-6">
-                    <h2 class="text-4xl font-bold mb-8 font-serif">About Me</h2>
-                    <p class="text-lg italic text-gray-700">
+    <!-- Hero Section with Split Layout -->
+    <section id="about" class="min-h-screen flex items-center">
+        <div class="grid md:grid-cols-2 w-full">
+            <!-- Left Panel - Image -->
+            <div class="relative h-screen">
+                <img src="images/neha-bg.png" alt="Neha Kasoju" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent"></div>
+            </div>
+            
+            <!-- Right Panel - About Text -->
+            <div class="flex items-center justify-center p-12 bg-gray-50">
+                <div class="max-w-xl">
+                    <h1 class="text-5xl font-bold mb-6 font-serif">Neha Kasoju</h1>
+                    <p class="text-2xl mb-8 text-indigo-600">Mechatronics Engineering Student</p>
+                    <p class="text-lg italic text-gray-700 mb-6">
                         Blending advocacy, healthcare, and technology, my journey has always been rooted in equity. From researching gender-affirming care to building self-driving systems and founding grassroots initiatives, I've sought to design solutions that serve underrepresented communities.
                     </p>
-                    <p class="text-lg">
+                    <p class="text-lg mb-6">
                         From creating a braille printer to improve accessibility for young learners, to designing surgical tools that empower marginalized communities, and reshaping education policies as a Student Trustee, I'm passionate about using innovation to make a difference.
                     </p>
                     <p class="text-lg">
                         I thrive on hands-on projects, tackling complex challenges, and driving real impact through empathy-driven tech solutions.
                     </p>
                 </div>
-                
-                <!-- Education -->
-                <div id="education" class="bg-white rounded-2xl shadow-lg p-8 hover-scale">
-                    <h2 class="text-3xl font-bold mb-6 font-serif">Education</h2>
-                    <div class="space-y-4">
-                        <div class="flex items-start space-x-4">
-                            <img src="images/waterloo-logo.png" alt="Waterloo Logo" class="w-12 h-12">
-                            <div>
-                                <h3 class="font-bold text-xl">University of Waterloo</h3>
-                                <p class="text-gray-600">BASc – Mechatronics, Robotics & Automation Engineering (Honours, Co-op)</p>
-                                <p class="text-indigo-600 mt-2">Elected Mechatronics Class Representative (Academic & Waterloo Engineering Society)</p>
-                            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center font-serif">Education</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl shadow-lg p-8 hover-scale">
+                    <div class="flex items-start space-x-6">
+                        <img src="images/waterloo-logo.png" alt="Waterloo Logo" class="w-20 h-20">
+                        <div>
+                            <h3 class="font-bold text-2xl mb-2">University of Waterloo</h3>
+                            <p class="text-gray-600 text-lg">BASc – Mechatronics, Robotics & Automation Engineering (Honours, Co-op)</p>
+                            <p class="text-indigo-600 mt-2">Elected Mechatronics Class Representative (Academic & Waterloo Engineering Society)</p>
                         </div>
                     </div>
                 </div>
@@ -74,16 +75,17 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-20">
+    <section id="experience" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold mb-12 text-center font-serif">Experience</h2>
             <div class="max-w-4xl mx-auto space-y-8">
-                <!-- Experience Cards -->
+                <!-- SickKids -->
                 <div class="bg-white rounded-2xl shadow-lg p-8 hover-scale">
                     <h3 class="text-2xl font-bold mb-4">Orthopaedic Surgery Engineering</h3>
                     <p class="text-gray-600">The Hospital for Sick Children</p>
                 </div>
 
+                <!-- Watonomous -->
                 <div class="bg-white rounded-2xl shadow-lg p-8 hover-scale">
                     <h3 class="text-2xl font-bold mb-4">Watonomous | Vehicle Platform Division Member</h3>
                     <ul class="list-disc list-inside space-y-2 text-gray-600">
@@ -92,6 +94,7 @@
                     </ul>
                 </div>
 
+                <!-- Durham District School Board -->
                 <div class="bg-white rounded-2xl shadow-lg p-8 hover-scale">
                     <h3 class="text-2xl font-bold mb-4">Durham District School Board | Student Trustee</h3>
                     <p class="italic text-gray-700 mb-4">Driven to address inequity, I ran to represent 83,000+ students. From launching "Operation Opportunities" to passing board-wide policies, I worked to reshape student advocacy in public education.</p>
@@ -105,13 +108,22 @@
                     </ul>
                 </div>
 
-                <!-- Add more experience cards similarly -->
+                <!-- Women's College Hospital -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 hover-scale">
+                    <h3 class="text-2xl font-bold mb-4">Women's College Hospital | Transition Surgery Researcher</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>Designed a <span class="text-indigo-600 font-semibold">3D-printed speculum</span> to improve biopsy accuracy and comfort for trans-female patients.</li>
+                        <li>Created <span class="text-indigo-600 font-semibold">Transition Surgery Patient Advisory Board</span></li>
+                        <li>Developed <span class="text-indigo-600 font-semibold">Research Ethics Board</span> proposals</li>
+                        <li>Focused on improving healthcare accessibility and decision-making for transgender youth considering vaginoplasty.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-50">
+    <section id="projects" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold mb-12 text-center font-serif">Projects</h2>
             <div class="grid md:grid-cols-3 gap-8">
@@ -149,17 +161,36 @@
     </section>
 
     <!-- Awards Section -->
-    <section id="awards" class="py-20">
+    <section id="awards" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold mb-12 text-center font-serif">Awards & Scholarships</h2>
-            <div class="max-w-3xl mx-auto">
-                <p class="text-2xl text-center mb-8 text-indigo-600">Over $190,000 in Scholarships Awarded</p>
+            <div class="max-w-4xl mx-auto">
+                <p class="text-2xl text-center mb-12 text-indigo-600">Over $190,000 in Scholarships Awarded</p>
                 <div class="grid md:grid-cols-2 gap-6">
                     <div class="bg-white rounded-2xl shadow-lg p-6 hover-scale">
                         <h3 class="font-bold text-xl">Queen's Chancellor's</h3>
                         <p class="text-gray-600">$48,000</p>
                     </div>
-                    <!-- Add more award cards -->
+                    <div class="bg-white rounded-2xl shadow-lg p-6 hover-scale">
+                        <h3 class="font-bold text-xl">Western National</h3>
+                        <p class="text-gray-600">$30,000</p>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg p-6 hover-scale">
+                        <h3 class="font-bold text-xl">Ted Rogers Future Leaders</h3>
+                        <p class="text-gray-600">$26,800</p>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg p-6 hover-scale">
+                        <h3 class="font-bold text-xl">A.J. and Muriel G. Billes</h3>
+                        <p class="text-gray-600">$10,000</p>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg p-6 hover-scale">
+                        <h3 class="font-bold text-xl">Foresters Financial</h3>
+                        <p class="text-gray-600">$10,000</p>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg p-6 hover-scale">
+                        <h3 class="font-bold text-xl">First-Year Entrance Award</h3>
+                        <p class="text-gray-600">University of Waterloo</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -182,7 +213,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20">
+    <section id="contact" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold mb-12 text-center font-serif">Get in Touch</h2>
             <div class="max-w-lg mx-auto">

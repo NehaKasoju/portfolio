@@ -14,6 +14,11 @@
     to { transform: scale(1); opacity: 1; }
 }
 
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
 /* Base Styles */
 :root {
     --primary-color: #4f46e5;
@@ -27,10 +32,41 @@ body {
     font-family: 'Inter', sans-serif;
     color: var(--text-color);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
+}
+
+/* Hero Section Styles */
+#about {
+    position: relative;
+    overflow: hidden;
+}
+
+#about .grid {
+    min-height: 100vh;
+}
+
+#about img {
+    transition: transform 0.5s ease;
+}
+
+#about:hover img {
+    transform: scale(1.05);
+}
+
+/* Section Animations */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Apply animations to sections */
@@ -142,6 +178,7 @@ button:hover {
 .experience-card {
     transition: all 0.3s ease;
     cursor: pointer;
+    animation: slideUp 0.5s ease-out;
 }
 
 .experience-card:hover {
@@ -180,6 +217,14 @@ button:hover {
     
     .project-card:hover {
         transform: none;
+    }
+
+    #about .grid {
+        grid-template-columns: 1fr;
+    }
+
+    #about img {
+        height: 50vh;
     }
 }
 
@@ -230,4 +275,21 @@ button:hover {
 
 .highlight:hover::after {
     height: 100%;
+}
+
+/* Add smooth section transitions */
+section {
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Add JavaScript to handle scroll animations */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
