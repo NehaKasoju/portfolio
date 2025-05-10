@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neha Kasoju - Mechatronics Engineering Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
-<body class="bg-white text-gray-900">
+<body class="bg-white text-gray-900 font-sans">
     <!-- Navigation -->
     <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="text-xl font-bold">NK</div>
+                <div class="text-xl font-bold font-serif">NK</div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#about" class="hover:text-blue-600 transition">About</a>
-                    <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
-                    <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+                    <a href="#about" class="hover:text-indigo-600 transition">About</a>
+                    <a href="#education" class="hover:text-indigo-600 transition">Education</a>
+                    <a href="#experience" class="hover:text-indigo-600 transition">Experience</a>
+                    <a href="#projects" class="hover:text-indigo-600 transition">Projects</a>
+                    <a href="#awards" class="hover:text-indigo-600 transition">Awards</a>
+                    <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
                 </div>
             </div>
         </div>
@@ -26,7 +30,7 @@
     <section class="min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('images/neha-bg.png');">
         <div class="absolute inset-0 bg-black/50"></div>
         <div class="relative z-10 text-center text-white">
-            <h1 class="text-5xl md:text-7xl font-bold mb-4">Neha Kasoju</h1>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 font-serif">Neha Kasoju</h1>
             <p class="text-xl md:text-2xl">Mechatronics Engineering Student</p>
             <p class="mt-4 text-lg">Building equity through technology</p>
         </div>
@@ -35,78 +39,156 @@
     <!-- About Section -->
     <section id="about" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-12 text-center">About Me</h2>
-            <div class="max-w-3xl mx-auto text-lg">
-                <p class="mb-6">
-                    From creating a braille printer to improve accessibility for young learners, to designing surgical tools that empower marginalized communities, and reshaping education policies as a Student Trustee, I'm passionate about using innovation to make a difference.
+            <div class="max-w-3xl mx-auto">
+                <p class="text-lg italic text-gray-700 mb-8">
+                    Blending advocacy, healthcare, and technology, my journey has always been rooted in equity. From researching gender-affirming care to building self-driving systems and founding grassroots initiatives, I've sought to design solutions that serve underrepresented communities.
                 </p>
-                <p class="mb-6">
-                    I thrive on hands-on projects, tackling complex challenges, and driving real impact through empathy-driven tech solutions.
-                </p>
-                <p class="text-center text-xl font-semibold text-blue-600">
-                    Let's build a more equitable world together :)
-                </p>
+                <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+                    <h2 class="text-3xl font-bold mb-6 font-serif">Education</h2>
+                    <div class="flex items-start space-x-4">
+                        <img src="images/waterloo-logo.png" alt="Waterloo Logo" class="w-16 h-16 object-contain">
+                        <div>
+                            <h3 class="text-xl font-bold">University of Waterloo</h3>
+                            <p class="text-gray-600">BASc – Mechatronics, Robotics & Automation Engineering (Honours, Co-op)</p>
+                            <p class="text-sm text-gray-500 mt-2">Elected Mechatronics Class Representative (Academic & Waterloo Engineering Society)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center font-serif">Experience</h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <!-- Experience Cards -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-2xl font-bold mb-2">Orthopaedic Surgery Engineering</h3>
+                    <p class="text-gray-600 mb-4">The Hospital for Sick Children</p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-2xl font-bold mb-2">Watonomous | Vehicle Platform Division Member</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Developing ROS2 control nodes in C++ for joystick interfaces, safety systems, and autonomy</li>
+                        <li>Supporting a fully autonomous Kia Soul, focusing on perception, control, and integration</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-2xl font-bold mb-2">Durham District School Board | Student Trustee</h3>
+                    <p class="text-gray-600 mb-4">Driven to address inequity, I ran to represent 83,000+ students. From launching "Operation Opportunities" to passing board-wide policies, I worked to reshape student advocacy in public education.</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Elected voice of 83,000+ students</li>
+                        <li>Launched Operation Opportunities database</li>
+                        <li>Led Student Senate, monthly board reports, equity research</li>
+                        <li>Passed new Student Trustee policy</li>
+                        <li>Organized mental health conferences</li>
+                        <li>Spearheaded menstrual hygiene fundraisers in low-income schools</li>
+                    </ul>
+                </div>
+
+                <!-- Add more experience cards here -->
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20">
+    <section id="projects" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-12 text-center">Projects</h2>
+            <h2 class="text-4xl font-bold mb-12 text-center font-serif">Projects</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Project 1 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden project-card">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden project-card">
                     <img src="images/project1.png" alt="DotMatic Project" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-2">DotMatic</h3>
                         <p class="text-gray-600 mb-4">A Braille Printer for young learners</p>
-                        <a href="https://github.com/NehaKasoju/DotMatic" class="text-blue-600 hover:text-blue-800">Learn More →</a>
+                        <a href="https://github.com/NehaKasoju/DotMatic" class="text-indigo-600 hover:text-indigo-800">Learn More →</a>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden project-card">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden project-card">
                     <img src="images/project2.png" alt="Operation Opportunities" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-2">Operation Opportunities</h3>
                         <p class="text-gray-600 mb-4">Connecting students with STEM opportunities</p>
-                        <a href="https://github.com/NehaKasoju/hawkhacks-2024" class="text-blue-600 hover:text-blue-800">Learn More →</a>
+                        <a href="https://github.com/NehaKasoju/hawkhacks-2024" class="text-indigo-600 hover:text-indigo-800">Learn More →</a>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden project-card">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden project-card">
                     <img src="images/project3.png" alt="Surgical Research" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-2">Surgical Research</h3>
                         <p class="text-gray-600 mb-4">Improving healthcare accessibility</p>
-                        <a href="https://www.womenscollegehospital.ca/wrapping-up-summer-student-research-day-2023/" class="text-blue-600 hover:text-blue-800">Learn More →</a>
+                        <a href="https://www.womenscollegehospital.ca/wrapping-up-summer-student-research-day-2023/" class="text-indigo-600 hover:text-indigo-800">Learn More →</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50">
+    <!-- Awards Section -->
+    <section id="awards" class="py-20">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-12 text-center">Get in Touch</h2>
+            <h2 class="text-4xl font-bold mb-12 text-center font-serif">Awards & Scholarships</h2>
+            <div class="max-w-3xl mx-auto">
+                <p class="text-xl text-center text-gray-600 mb-8">Over $190,000 in Scholarships Awarded</p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-2">Queen's Chancellor's</h3>
+                        <p class="text-indigo-600 font-mono">$48,000</p>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-2">Western National</h3>
+                        <p class="text-indigo-600 font-mono">$30,000</p>
+                    </div>
+                    <!-- Add more awards -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center font-serif">Hobbies & Interests</h2>
+            <p class="text-xl text-center text-gray-600 mb-8">Outside of work, I thrive in creative and exploratory spaces.</p>
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300">
+                    <span class="text-4xl mb-4 block">📷</span>
+                    <h3 class="text-xl font-bold mb-2">Photography</h3>
+                    <p class="text-gray-600">Capturing the world through my lens</p>
+                </div>
+                <!-- Add more hobby cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center font-serif">Get in Touch</h2>
             <div class="max-w-lg mx-auto">
                 <form class="space-y-6">
                     <div>
                         <label class="block text-gray-700 mb-2">Name</label>
-                        <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                        <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-indigo-500">
                     </div>
                     <div>
                         <label class="block text-gray-700 mb-2">Email</label>
-                        <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+                        <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-indigo-500">
                     </div>
                     <div>
                         <label class="block text-gray-700 mb-2">Message</label>
-                        <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" rows="4"></textarea>
+                        <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-indigo-500" rows="4"></textarea>
                     </div>
-                    <button class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition">
+                    <button class="w-full bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition">
                         Send Message
                     </button>
                 </form>
