@@ -265,5 +265,33 @@
             <p>&copy; 2024 Neha Kasoju. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Ensure content is visible immediately
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = '1';
+        });
+
+        // Handle scroll animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
 </body>
 </html>
