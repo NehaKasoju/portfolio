@@ -33,6 +33,7 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     overflow-x: hidden;
+    opacity: 1 !important; /* Ensure body is always visible */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -59,19 +60,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Section Animations */
 section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.6s ease-out;
-}
-
-section.visible {
     opacity: 1;
-    transform: translateY(0);
-}
-
-/* Apply animations to sections */
-section {
-    animation: fadeIn 1s ease-out;
+    transform: none;
+    transition: all 0.6s ease-out;
 }
 
 /* Smooth scrolling */
@@ -284,12 +275,12 @@ section {
 
 /* Add JavaScript to handle scroll animations */
 .animate-on-scroll {
-    opacity: 0;
-    transform: translateY(20px);
+    opacity: 1;
+    transform: none;
     transition: all 0.6s ease-out;
 }
 
 .animate-on-scroll.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
 }
