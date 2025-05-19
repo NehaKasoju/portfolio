@@ -21,11 +21,13 @@
 
 /* Base Styles */
 :root {
-    --primary-color: #4f46e5;
-    --secondary-color: #818cf8;
-    --accent-color: #c084fc;
-    --text-color: #1f2937;
-    --bg-color: #ffffff;
+    --primary-color: #1a237e; /* Deep navy blue */
+    --secondary-color: #4a148c; /* Deep maroon */
+    --accent-color: #7b1fa2; /* Rich purple */
+    --text-color: #e0e0e0; /* Light gray for better contrast */
+    --bg-color: #121212; /* Dark background */
+    --card-bg: #1e1e1e; /* Slightly lighter dark for cards */
+    --hover-color: #2c3e50; /* Dark blue-gray for hover states */
 }
 
 body {
@@ -34,6 +36,7 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     visibility: visible !important;
+    background-color: var(--bg-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,6 +66,11 @@ section {
     visibility: visible;
     opacity: 1;
     transform: none;
+    background-color: var(--bg-color);
+}
+
+section:nth-child(even) {
+    background-color: #1a1a1a;
 }
 
 /* Smooth scrolling */
@@ -77,7 +85,7 @@ html {
 
 .hover-scale:hover {
     transform: scale(1.02);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 /* Project card hover effects */
@@ -85,13 +93,15 @@ html {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    background-color: var(--card-bg) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .project-card a {
     display: inline-block;
     padding: 8px 16px;
-    background-color: #4f46e5;
-    color: white !important;
+    background-color: var(--secondary-color);
+    color: var(--text-color) !important;
     border-radius: 6px;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -99,7 +109,7 @@ html {
 }
 
 .project-card a:hover {
-    background-color: #4338ca;
+    background-color: var(--accent-color);
     transform: translateY(-2px);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
@@ -127,9 +137,14 @@ html {
 }
 
 /* Navigation link hover effect */
+nav {
+    background-color: rgba(18, 18, 18, 0.95) !important;
+}
+
 nav a {
     position: relative;
     transition: color 0.3s ease;
+    color: var(--text-color);
 }
 
 nav a::after {
@@ -145,6 +160,10 @@ nav a::after {
 
 nav a:hover::after {
     width: 100%;
+}
+
+nav a:hover {
+    color: var(--accent-color);
 }
 
 /* Form input focus effects */
@@ -179,8 +198,8 @@ button:hover::after {
 }
 
 button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+    background-color: var(--secondary-color);
+    box-shadow: 0 4px 12px rgba(74, 20, 140, 0.3);
 }
 
 /* Experience card animations */
@@ -188,6 +207,8 @@ button:hover {
     transition: all 0.3s ease;
     cursor: pointer;
     animation: slideUp 0.5s ease-out;
+    background-color: var(--card-bg) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .experience-card:hover {
@@ -199,6 +220,8 @@ button:hover {
 .award-card {
     transition: all 0.3s ease;
     animation: scaleIn 0.5s ease-out;
+    background-color: var(--card-bg) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .award-card:hover {
@@ -210,6 +233,8 @@ button:hover {
 .hobby-card {
     transition: all 0.3s ease;
     animation: fadeIn 0.5s ease-out;
+    background-color: var(--card-bg) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .hobby-card:hover {
@@ -243,16 +268,16 @@ button:hover {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: var(--card-bg);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
+    background: var(--secondary-color);
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--secondary-color);
+    background: var(--accent-color);
 }
 
 /* Parallax effect for hero section */
@@ -276,8 +301,8 @@ button:hover {
     left: 0;
     width: 100%;
     height: 30%;
-    background-color: var(--accent-color);
-    opacity: 0.2;
+    background-color: var(--secondary-color);
+    opacity: 0.3;
     z-index: -1;
     transition: height 0.3s ease;
 }
@@ -301,4 +326,38 @@ section {
 .animate-on-scroll.visible {
     opacity: 1;
     transform: none;
+}
+
+/* Update card backgrounds */
+.bg-white {
+    background-color: var(--card-bg) !important;
+    color: var(--text-color);
+}
+
+/* Update text colors */
+.text-gray-600 {
+    color: #a0a0a0 !important;
+}
+
+.text-gray-700 {
+    color: #b0b0b0 !important;
+}
+
+.text-gray-900 {
+    color: var(--text-color) !important;
+}
+
+.text-indigo-600 {
+    color: var(--accent-color) !important;
+}
+
+/* Update footer */
+footer {
+    background-color: var(--primary-color) !important;
+}
+
+/* Update contact section cards */
+#contact .bg-white {
+    background-color: var(--card-bg) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
