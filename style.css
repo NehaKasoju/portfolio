@@ -477,3 +477,69 @@ section:nth-child(even) {
 #about .flex.items-center.justify-center {
     background-color: #f8f9fa !important;
 }
+
+/* Text Colors for Dark Backgrounds */
+.project-card p,
+.experience-card p,
+.experience-card li,
+.award-card p,
+.hobby-card p,
+#contact p,
+footer p,
+.text-gray-600,
+.text-gray-700,
+.text-gray-900 {
+    color: var(--text-color) !important;
+}
+
+/* Text Colors for Light Backgrounds */
+#about .flex.items-center.justify-center .max-w-xl h1,
+#about .flex.items-center.justify-center .max-w-xl p,
+#about .flex.items-center.justify-center .max-w-xl .text-2xl,
+#about .flex.items-center.justify-center .max-w-xl .text-lg {
+    color: var(--dark-text) !important;
+}
+
+/* Section Headings */
+h2.text-4xl.font-bold.mb-12.text-center.font-serif {
+    color: var(--dark-text) !important;
+}
+
+/* Card Content */
+.project-card h3,
+.experience-card h3,
+.award-card h3,
+.hobby-card h3 {
+    color: var(--text-color) !important;
+}
+
+/* Navigation */
+nav a {
+    color: var(--text-color) !important;
+}
+
+/* Contact Section */
+#contact .bg-white h3,
+#contact .bg-white p {
+    color: var(--text-color) !important;
+}
+
+/* Update the background of the about section to be light */
+#about .flex.items-center.justify-center {
+    background-color: #f8f9fa !important;
+}
+
+/* Ensure all text in dark containers is white */
+.bg-white,
+.project-card,
+.experience-card,
+.award-card,
+.hobby-card,
+#contact .bg-white {
+    color: var(--text-color) !important;
+}
+
+/* Ensure all text in light containers is navy */
+#about .flex.items-center.justify-center {
+    color: var(--dark-text) !important;
+}
