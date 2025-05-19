@@ -97,12 +97,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Hero Section Text Colors */
-#about .max-w-xl h1 {
-    color: var(--dark-text);
-}
-
-#about .max-w-xl p {
-    color: var(--dark-text);
+#about .flex.items-center.justify-center .max-w-xl h1,
+#about .flex.items-center.justify-center .max-w-xl p,
+#about .flex.items-center.justify-center .max-w-xl .text-2xl,
+#about .flex.items-center.justify-center .max-w-xl .text-lg {
+    color: var(--dark-text) !important;
 }
 
 /* Section Animations */
@@ -382,20 +381,14 @@ section {
 }
 
 /* Update text colors */
-.text-gray-600 {
-    color: var(--text-secondary) !important;
-}
-
-.text-gray-700 {
-    color: var(--text-color) !important;
-}
-
+.text-gray-600,
+.text-gray-700,
 .text-gray-900 {
-    color: var(--text-color) !important;
+    color: var(--dark-text) !important;
 }
 
 .text-indigo-600 {
-    color: var(--accent-color) !important;
+    color: var(--dark-text) !important;
 }
 
 /* Update footer */
@@ -474,43 +467,13 @@ section:nth-child(even) {
     background: linear-gradient(to bottom, rgba(17, 34, 64, 0.3), transparent);
 }
 
-/* Text Colors */
-.text-gray-600 {
-    color: var(--text-secondary) !important;
-}
-
-.text-gray-700 {
-    color: var(--text-color) !important;
-}
-
-.text-gray-900 {
-    color: var(--text-color) !important;
-}
-
-.text-indigo-600 {
-    color: var(--accent-color) !important;
-}
-
-/* Contact Section */
-#contact .bg-white {
-    background: var(--secondary-color) !important;
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--border-color);
-}
-
-/* Footer */
-footer {
-    background: linear-gradient(to bottom, var(--primary-color), var(--bg-color)) !important;
-    border-top: 1px solid var(--border-color);
-}
-
 /* Section Headings */
-#experience h2,
-#awards h2 {
-    color: var(--dark-text);
+#experience h2.text-4xl.font-bold.mb-12.text-center.font-serif,
+#awards h2.text-4xl.font-bold.mb-12.text-center.font-serif {
+    color: var(--dark-text) !important;
 }
 
 /* Update the background of the about section to be light */
 #about .flex.items-center.justify-center {
-    background-color: #f8f9fa;
+    background-color: #f8f9fa !important;
 }
