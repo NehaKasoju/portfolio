@@ -33,6 +33,7 @@
     --hover-color: #1d3461; /* Lighter navy for hover */
     --border-color: rgba(201, 169, 89, 0.2); /* Subtle gold border */
     --glass-bg: rgba(255, 255, 255, 0.05); /* Glassmorphism background */
+    --dark-text: #0a192f; /* Dark blue for specific text */
 }
 
 /* Starfield Background */
@@ -93,6 +94,15 @@ h1, h2, h3, h4, h5, h6 {
 
 #about:hover img {
     transform: scale(1.05);
+}
+
+/* Hero Section Text Colors */
+#about .max-w-xl h1 {
+    color: var(--dark-text);
+}
+
+#about .max-w-xl p {
+    color: var(--dark-text);
 }
 
 /* Section Animations */
@@ -492,4 +502,15 @@ section:nth-child(even) {
 footer {
     background: linear-gradient(to bottom, var(--primary-color), var(--bg-color)) !important;
     border-top: 1px solid var(--border-color);
+}
+
+/* Section Headings */
+#experience h2,
+#awards h2 {
+    color: var(--dark-text);
+}
+
+/* Update the background of the about section to be light */
+#about .flex.items-center.justify-center {
+    background-color: #f8f9fa;
 }
