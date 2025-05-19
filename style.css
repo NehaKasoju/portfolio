@@ -87,6 +87,23 @@ html {
     overflow: hidden;
 }
 
+.project-card a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4f46e5;
+    color: white !important;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 8px;
+}
+
+.project-card a:hover {
+    background-color: #4338ca;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
 .project-card::before {
     content: '';
     position: absolute;
@@ -97,6 +114,7 @@ html {
     background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
     opacity: 0;
     transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
 .project-card:hover::before {
