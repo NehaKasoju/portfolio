@@ -4,31 +4,65 @@
     to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes slideIn {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(0); }
+@keyframes twinkle {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
 }
 
-@keyframes scaleIn {
-    from { transform: scale(0.95); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
 }
 
-@keyframes slideUp {
-    from { transform: translateY(50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+@keyframes drift {
+    0% { transform: translateX(0) translateY(0); }
+    50% { transform: translateX(10px) translateY(10px); }
+    100% { transform: translateX(0) translateY(0); }
 }
 
 /* Base Styles */
 :root {
-    --primary-color: #1a237e; /* Deep navy blue */
-    --secondary-color: #4a148c; /* Deep maroon */
-    --accent-color: #7b1fa2; /* Rich purple */
-    --text-color: #e0e0e0; /* Light gray for better contrast */
-    --bg-color: #121212; /* Dark background */
-    --card-bg: #1e1e1e; /* Slightly lighter dark for cards */
-    --hover-color: #2c3e50; /* Dark blue-gray for hover states */
+    --primary-color: #0a192f; /* Deep navy blue */
+    --secondary-color: #112240; /* Slightly lighter navy */
+    --accent-color: #c9a959; /* Muted gold */
+    --text-color: #e6f1ff; /* Off-white */
+    --text-secondary: #8892b0; /* Light gray */
+    --bg-color: #020c1b; /* Darkest navy */
+    --card-bg: rgba(17, 34, 64, 0.7); /* Semi-transparent navy */
+    --hover-color: #1d3461; /* Lighter navy for hover */
+    --border-color: rgba(201, 169, 89, 0.2); /* Subtle gold border */
+    --glass-bg: rgba(255, 255, 255, 0.05); /* Glassmorphism background */
 }
+
+/* Starfield Background */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, #0a192f 0%, #020c1b 100%);
+    z-index: -2;
+}
+
+.star {
+    position: fixed;
+    background: white;
+    border-radius: 50%;
+    z-index: -1;
+    animation: twinkle 4s infinite;
+}
+
+.star:nth-child(1) { width: 1px; height: 1px; top: 10%; left: 20%; animation-delay: 0s; }
+.star:nth-child(2) { width: 2px; height: 2px; top: 20%; left: 50%; animation-delay: 0.5s; }
+.star:nth-child(3) { width: 1px; height: 1px; top: 30%; left: 80%; animation-delay: 1s; }
+.star:nth-child(4) { width: 2px; height: 2px; top: 40%; left: 30%; animation-delay: 1.5s; }
+.star:nth-child(5) { width: 1px; height: 1px; top: 50%; left: 70%; animation-delay: 2s; }
+.star:nth-child(6) { width: 2px; height: 2px; top: 60%; left: 40%; animation-delay: 2.5s; }
+.star:nth-child(7) { width: 1px; height: 1px; top: 70%; left: 90%; animation-delay: 3s; }
+.star:nth-child(8) { width: 2px; height: 2px; top: 80%; left: 60%; animation-delay: 3.5s; }
 
 body {
     font-family: 'Inter', sans-serif;
@@ -360,4 +394,97 @@ footer {
 #contact .bg-white {
     background-color: var(--card-bg) !important;
     border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Glassmorphism Cards */
+.project-card, .bg-white, .experience-card, .award-card, .hobby-card {
+    background: var(--glass-bg) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Project Cards */
+.project-card {
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+    box-shadow: 0 12px 40px 0 rgba(201, 169, 89, 0.1);
+}
+
+.project-card a {
+    background: linear-gradient(45deg, var(--accent-color), #d4af37);
+    color: var(--bg-color) !important;
+    font-weight: 500;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.project-card a:hover {
+    background: linear-gradient(45deg, #d4af37, var(--accent-color));
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(201, 169, 89, 0.3);
+}
+
+/* Navigation */
+nav {
+    background: rgba(10, 25, 47, 0.8) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav a {
+    color: var(--text-color);
+    position: relative;
+}
+
+nav a::after {
+    background-color: var(--accent-color);
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Section Styling */
+section {
+    background: transparent;
+    position: relative;
+}
+
+section:nth-child(even) {
+    background: linear-gradient(to bottom, rgba(17, 34, 64, 0.3), transparent);
+}
+
+/* Text Colors */
+.text-gray-600 {
+    color: var(--text-secondary) !important;
+}
+
+.text-gray-700 {
+    color: var(--text-color) !important;
+}
+
+.text-gray-900 {
+    color: var(--text-color) !important;
+}
+
+.text-indigo-600 {
+    color: var(--accent-color) !important;
+}
+
+/* Contact Section */
+#contact .bg-white {
+    background: var(--glass-bg) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to bottom, var(--primary-color), var(--bg-color)) !important;
+    border-top: 1px solid var(--border-color);
 }
