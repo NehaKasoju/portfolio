@@ -28,7 +28,7 @@
     --accent-color: #c9a959; /* Muted gold */
     --text-color: #e6f1ff; /* Off-white */
     --text-secondary: #8892b0; /* Light gray */
-    --bg-color: #020c1b; /* Darkest navy */
+    --bg-color: #0a192f; /* Deep navy blue - same as primary */
     --card-bg: rgba(17, 34, 64, 0.7); /* Semi-transparent navy */
     --hover-color: #1d3461; /* Lighter navy for hover */
     --border-color: rgba(201, 169, 89, 0.2); /* Subtle gold border */
@@ -43,7 +43,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center, #0a192f 0%, #020c1b 100%);
+    background: var(--bg-color);
     z-index: -2;
 }
 
@@ -100,11 +100,12 @@ section {
     visibility: visible;
     opacity: 1;
     transform: none;
-    background-color: var(--bg-color);
+    background: var(--bg-color);
+    position: relative;
 }
 
 section:nth-child(even) {
-    background-color: #1a1a1a;
+    background: var(--bg-color);
 }
 
 /* Smooth scrolling */
@@ -127,8 +128,8 @@ html {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-    background-color: var(--card-bg) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: var(--secondary-color) !important;
+    border: 1px solid var(--border-color);
 }
 
 .project-card a {
@@ -172,7 +173,9 @@ html {
 
 /* Navigation link hover effect */
 nav {
-    background-color: rgba(18, 18, 18, 0.95) !important;
+    background: var(--bg-color) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
 }
 
 nav a {
@@ -241,8 +244,8 @@ button:hover {
     transition: all 0.3s ease;
     cursor: pointer;
     animation: slideUp 0.5s ease-out;
-    background-color: var(--card-bg) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: var(--secondary-color) !important;
+    border: 1px solid var(--border-color);
 }
 
 .experience-card:hover {
@@ -254,8 +257,8 @@ button:hover {
 .award-card {
     transition: all 0.3s ease;
     animation: scaleIn 0.5s ease-out;
-    background-color: var(--card-bg) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: var(--secondary-color) !important;
+    border: 1px solid var(--border-color);
 }
 
 .award-card:hover {
@@ -267,8 +270,8 @@ button:hover {
 .hobby-card {
     transition: all 0.3s ease;
     animation: fadeIn 0.5s ease-out;
-    background-color: var(--card-bg) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: var(--secondary-color) !important;
+    border: 1px solid var(--border-color);
 }
 
 .hobby-card:hover {
@@ -364,17 +367,17 @@ section {
 
 /* Update card backgrounds */
 .bg-white {
-    background-color: var(--card-bg) !important;
+    background-color: var(--secondary-color) !important;
     color: var(--text-color);
 }
 
 /* Update text colors */
 .text-gray-600 {
-    color: #a0a0a0 !important;
+    color: var(--text-secondary) !important;
 }
 
 .text-gray-700 {
-    color: #b0b0b0 !important;
+    color: var(--text-color) !important;
 }
 
 .text-gray-900 {
@@ -387,18 +390,20 @@ section {
 
 /* Update footer */
 footer {
-    background-color: var(--primary-color) !important;
+    background: var(--bg-color) !important;
+    border-top: 1px solid var(--border-color);
 }
 
 /* Update contact section cards */
 #contact .bg-white {
-    background-color: var(--card-bg) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--secondary-color) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
 }
 
 /* Glassmorphism Cards */
 .project-card, .bg-white, .experience-card, .award-card, .hobby-card {
-    background: var(--glass-bg) !important;
+    background: var(--secondary-color) !important;
     backdrop-filter: blur(10px);
     border: 1px solid var(--border-color);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -431,7 +436,7 @@ footer {
 
 /* Navigation */
 nav {
-    background: rgba(10, 25, 47, 0.8) !important;
+    background: var(--bg-color) !important;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
 }
@@ -478,7 +483,7 @@ section:nth-child(even) {
 
 /* Contact Section */
 #contact .bg-white {
-    background: var(--glass-bg) !important;
+    background: var(--secondary-color) !important;
     backdrop-filter: blur(10px);
     border: 1px solid var(--border-color);
 }
