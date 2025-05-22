@@ -543,3 +543,25 @@ nav a {
 #about .flex.items-center.justify-center {
     color: var(--dark-text) !important;
 }
+
+/* New color rules for specific elements */
+.mechatronics-title {
+    color: var(--accent-color) !important;
+}
+
+.education-text,
+.elected-rep-text {
+    color: var(--text-color) !important;
+}
+
+.experience-card h3,
+.experience-card p,
+.experience-card li {
+    color: var(--accent-color) !important;
+}
+
+.projects-heading,
+.hobbies-heading,
+.connect-heading {
+    color: var(--text-color) !important;
+}
