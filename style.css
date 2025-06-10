@@ -395,11 +395,6 @@ section {
 footer {
     background: var(--bg-color) !important;
     border-top: 1px solid var(--border-color);
-    padding: 1rem 0 !important; /* Reduced padding */
-}
-
-footer .container {
-    padding: 0.5rem 0 !important; /* Reduced container padding */
 }
 
 /* Update contact section cards */
@@ -507,7 +502,7 @@ footer p,
 
 /* Section Headings */
 h2.text-4xl.font-bold.mb-12.text-center.font-serif {
-    color: var(--text-color) !important;
+    color: var(--dark-text) !important;
 }
 
 /* Card Content */
@@ -562,12 +557,7 @@ nav a {
 .experience-card h3,
 .experience-card p,
 .experience-card li {
-    color: var(--text-color) !important;
-}
-
-.experience-card .highlight-keyword {
     color: var(--accent-color) !important;
-    font-weight: 500;
 }
 
 .projects-heading,
