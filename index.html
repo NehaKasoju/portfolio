@@ -8,39 +8,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
-<body class="bg-white text-gray-900 font-sans">
-    <!-- Starfield Background -->
-    <div class="starfield">
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-    </div>
-    
+<body class="bg-black text-white font-sans">
     <!-- Navigation -->
-    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+    <nav class="fixed w-full bg-black/90 backdrop-blur-sm z-50 border-b border-gray-800">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="text-xl font-bold font-serif">NK</div>
+                <div class="text-xl font-bold font-serif text-white">NK</div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#about" class="hover:text-indigo-600 transition">About</a>
-                    <a href="#education" class="hover:text-indigo-600 transition">Education</a>
-                    <a href="#experience" class="hover:text-indigo-600 transition">Experience</a>
-                    <a href="#projects" class="hover:text-indigo-600 transition">Projects</a>
-                    <a href="#awards" class="hover:text-indigo-600 transition">Awards</a>
-                    <a href="#hobbies" class="hover:text-indigo-600 transition">Hobbies</a>
-                    <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+                    <a href="#about" class="text-white hover:text-cyan-400 transition-colors duration-300">About</a>
+                    <a href="#education" class="text-white hover:text-cyan-400 transition-colors duration-300">Education</a>
+                    <a href="#experience" class="text-white hover:text-cyan-400 transition-colors duration-300">Experience</a>
+                    <a href="#projects" class="text-white hover:text-cyan-400 transition-colors duration-300">Projects</a>
+                    <a href="#awards" class="text-white hover:text-cyan-400 transition-colors duration-300">Awards</a>
+                    <a href="#hobbies" class="text-white hover:text-cyan-400 transition-colors duration-300">Hobbies</a>
+                    <a href="#blog" class="text-white hover:text-cyan-400 transition-colors duration-300">Blog</a>
+                    <a href="#contact" class="text-white hover:text-cyan-400 transition-colors duration-300">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section with Split Layout -->
-    <section id="about" class="min-h-screen flex items-center">
+    <section id="about" class="min-h-screen flex items-center bg-black">
         <div class="grid md:grid-cols-2 w-full">
             <!-- Left Panel - Image -->
             <div class="relative h-screen">
@@ -49,21 +38,21 @@
             </div>
             
             <!-- Right Panel - About Text -->
-            <div class="flex items-center justify-center p-12 bg-gray-50">
+            <div class="flex items-center justify-center p-12 bg-black">
                 <div class="max-w-xl">
-                    <h1 class="text-5xl font-bold mb-6 font-serif">Neha Kasoju</h1>
-                    <p class="text-2xl mb-8 mechatronics-title">Mechatronics Engineering Student</p>
-                    <p class="text-lg italic text-gray-700 mb-6">
-                        • I build with meaning
+                    <h1 class="text-5xl font-bold mb-6 font-serif text-white">Neha Kasoju</h1>
+                    <p class="text-2xl mb-8 text-cyan-400">Mechatronics Engineering Student</p>
+                    <p class="text-lg italic text-gray-300 mb-6">
+                        • I build with <span class="text-pink-400">meaning</span>
                     </p>
                     <p class="text-lg mb-6">
-                        • I live to build surgical tech, pushing the boundaries of surgical robotics
+                        • I live to build <span class="text-green-400">surgical tech</span>, pushing the boundaries of <span class="text-blue-400">surgical robotics</span>
                     </p>
                     <p class="text-lg mb-6">
-                        • Passionate about bringing innovative products and projects to market
+                        • Passionate about bringing <span class="text-yellow-400">innovative products</span> and projects to market
                     </p>
                     <p class="text-lg">
-                        • Combine mechanical, software, and electrical skills to drive new healthcare innovations
+                        • Combine <span class="text-purple-400">mechanical</span>, <span class="text-orange-400">software</span>, and <span class="text-red-400">electrical</span> skills to drive new healthcare innovations
                     </p>
                 </div>
             </div>
@@ -71,17 +60,17 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="py-20 bg-white">
+    <section id="education" class="py-20 bg-black">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-12 text-center font-serif education-text">Education</h2>
+            <h2 class="text-4xl font-bold mb-12 text-center font-serif text-white">Education</h2>
             <div class="max-w-4xl mx-auto">
-                <div class="bg-white rounded-2xl shadow-lg p-8 hover-scale">
+                <div class="bg-gray-900 rounded-2xl shadow-2xl p-8 hover:scale-105 transition-transform duration-300 border border-gray-800">
                     <div class="flex items-start space-x-6">
                         <img src="images/waterloo-logo.png" alt="Waterloo Logo" class="w-20 h-20">
                         <div>
-                            <h3 class="font-bold text-2xl mb-2">University of Waterloo</h3>
-                            <p class="text-gray-600 text-lg">BASc – Mechatronics, Robotics & Automation Engineering (Honours, Co-op)</p>
-                            <p class="elected-rep-text mt-2">Elected Mechatronics Class Representative (Academic & Waterloo Engineering Society)</p>
+                            <h3 class="font-bold text-2xl mb-2 text-white">University of Waterloo</h3>
+                            <p class="text-gray-300 text-lg">BASc – Mechatronics, Robotics & Automation Engineering (Honours, Co-op)</p>
+                            <p class="text-cyan-400 mt-2">Elected Mechatronics Class Representative (Academic & Waterloo Engineering Society)</p>
                         </div>
                     </div>
                 </div>
@@ -90,116 +79,193 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-20 bg-gray-50">
+    <section id="experience" class="py-20 bg-gray-900">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-12 text-center font-serif">Experience</h2>
-            <div class="max-w-4xl mx-auto space-y-8">
-                <!-- SickKids -->
-                <div class="bg-white rounded-2xl shadow-lg p-8 hover-scale experience-card">
-                    <h3 class="text-2xl font-bold mb-4">Orthopaedic Surgery Engineering</h3>
-                    <p class="text-gray-600">The Hospital for Sick Children</p>
+            <h2 class="text-4xl font-bold mb-12 text-center font-serif text-white">Experience</h2>
+            <div class="max-w-6xl mx-auto space-y-6">
+                <!-- Undergraduate Research Assistant -->
+                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
+                    <div class="flex items-start space-x-4">
+                        <img src="images/orthotron.png" alt="ORTHOtron Logo" class="w-16 h-16 rounded-lg">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-white mb-1">Undergraduate Research Assistant</h3>
+                            <p class="text-gray-400 mb-2">Orthopaedic Mechatronics Lab (ORTHOtron)</p>
+                            <p class="text-gray-300 mb-3">incoming f25</p>
+                            <p class="text-gray-500 text-sm">Skills: —</p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Watonomous -->
-                <div class="bg-white rounded-2xl shadow-lg p-8 hover-scale experience-card">
-                    <h3 class="text-2xl font-bold mb-4">Watonomous | Vehicle Platform Division Member</h3>
-                    <ul class="list-disc list-inside space-y-2">
-                        <li>Developing <span class="highlight-keyword">ROS2</span> control nodes in <span class="highlight-keyword">C++</span> for joystick interfaces, safety systems, and autonomy.</li>
-                        <li>Supporting a fully autonomous <span class="highlight-keyword">Kia Soul</span>, focusing on perception, control, and integration.</li>
-                    </ul>
+                <!-- Surgical Robotics Engineer -->
+                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
+                    <div class="flex items-start space-x-4">
+                        <img src="images/sickkids.png" alt="SickKids Logo" class="w-16 h-16 rounded-lg">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-white mb-1">Surgical Robotics Engineer</h3>
+                            <p class="text-gray-400 mb-2">The Hospital for Sick Children</p>
+                            <p class="text-gray-300 mb-3">🩺 designing & developing robotic systems for orthopaedic surgery</p>
+                            <p class="text-gray-500 text-sm">Skills: 3D Printing · AutoCAD · SOLIDWORKS · Mechanical Engineering · Electronics · Microcontrollers</p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Durham District School Board -->
-                <div class="bg-white rounded-2xl shadow-lg p-8 hover-scale experience-card">
-                    <h3 class="text-2xl font-bold mb-4">Durham District School Board | Student Trustee</h3>
-                    <p class="italic mb-4">Driven to address inequity, I ran to represent 83,000+ students. From launching "Operation Opportunities" to passing board-wide policies, I worked to reshape student advocacy in public education.</p>
-                    <ul class="list-disc list-inside space-y-2">
-                        <li>Elected voice of 83,000+ students</li>
-                        <li>Launched <span class="highlight-keyword">Operation Opportunities</span> database</li>
-                        <li>Led <span class="highlight-keyword">Student Senate</span>, monthly board reports, equity research</li>
-                        <li>Passed new <span class="highlight-keyword">Student Trustee policy</span></li>
-                        <li>Organized <span class="highlight-keyword">mental health conferences</span></li>
-                        <li>Spearheaded <span class="highlight-keyword">menstrual hygiene fundraisers</span> in low-income schools</li>
-                    </ul>
+                <!-- Software Engineer -->
+                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
+                    <div class="flex items-start space-x-4">
+                        <img src="images/tartigrade.png" alt="Tartigrade Logo" class="w-16 h-16 rounded-lg">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-white mb-1">Software Engineer</h3>
+                            <p class="text-gray-400 mb-2">Tartigrade Ltd.</p>
+                            <p class="text-gray-300 mb-3">💻 full stack development building platforms & internal systems @ a hedge fund</p>
+                            <p class="text-gray-500 text-sm">Skills: Large Language Models (LLM) · Docker Products · Git</p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Women's College Hospital -->
-                <div class="bg-white rounded-2xl shadow-lg p-8 hover-scale experience-card">
-                    <h3 class="text-2xl font-bold mb-4">Women's College Hospital | Transition Surgery Researcher</h3>
-                    <ul class="list-disc list-inside space-y-2">
-                        <li>Tested a <span class="highlight-keyword">3D-printed speculum</span> to improve biopsy accuracy and comfort for trans-female patients.</li>
-                        <li>Created <span class="highlight-keyword">Transition Surgery Patient Advisory Board</span></li>
-                        <li>Developed <span class="highlight-keyword">Research Ethics Board</span> proposals</li>
-                        <li>Focused on improving healthcare accessibility and decision-making for transgender youth considering vaginoplasty.</li>
-                    </ul>
+                <!-- Vehicle Platform Division Engineer -->
+                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
+                    <div class="flex items-start space-x-4">
+                        <img src="images/wato.png" alt="WATOnomous Logo" class="w-16 h-16 rounded-lg">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-white mb-1">Vehicle Platform Division Engineer</h3>
+                            <p class="text-gray-400 mb-2">WATOnomous</p>
+                            <p class="text-gray-300 mb-3">🚗 building a self-driving car as part of the electrical team</p>
+                            <p class="text-gray-500 text-sm">Skills: Robot Operating System (ROS) · C++</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student Trustee -->
+                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
+                    <div class="flex items-start space-x-4">
+                        <img src="images/ddsb.png" alt="DDSB Logo" class="w-16 h-16 rounded-lg">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-white mb-1">Student Trustee</h3>
+                            <p class="text-gray-400 mb-2">Durham District School Board</p>
+                            <p class="text-gray-300 mb-3">🏫 represent 83,000+ students @ board level</p>
+                            <p class="text-gray-500 text-sm">Skills: Leadership · Robert's Rules of Order · Youth Advocacy · Public Policy · Education</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quantum School -->
+                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
+                    <div class="flex items-start space-x-4">
+                        <img src="images/iqc.png" alt="IQC Logo" class="w-16 h-16 rounded-lg">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-white mb-1">Quantum School for Young Students (5.6% acceptance)</h3>
+                            <p class="text-gray-400 mb-2">Institute for Quantum Computing</p>
+                            <p class="text-gray-300 mb-3">🦄 1 of 42 students worldwide invited for the intensive & fully-funded study of quantum information</p>
+                            <p class="text-gray-500 text-sm">Skills: —</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Surgical Researcher -->
+                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
+                    <div class="flex items-start space-x-4">
+                        <img src="images/wch.png" alt="WCH Logo" class="w-16 h-16 rounded-lg">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-white mb-1">Surgical Researcher</h3>
+                            <p class="text-gray-400 mb-2">Women's College Hospital</p>
+                            <p class="text-gray-300 mb-3">🩺 research & build tools for transition-surgery</p>
+                            <p class="text-gray-500 text-sm">Skills: —</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Electrical Researcher -->
+                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
+                    <div class="flex items-start space-x-4">
+                        <img src="images/york.png" alt="York Logo" class="w-16 h-16 rounded-lg">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-white mb-1">Electrical Researcher</h3>
+                            <p class="text-gray-400 mb-2">York University</p>
+                            <p class="text-gray-300 mb-3">🌿 building sensor circuits that collect real-time data for AI models tackling infectious disease outbreaks, under Dr. Jude Kong</p>
+                            <p class="text-gray-500 text-sm">Skills: MATLAB · Computer Science · Research · Analytical Skills · Machine Learning · Critical Thinking · Mass Spectrometry · Circuit Design</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Biomolecular Researcher -->
+                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
+                    <div class="flex items-start space-x-4">
+                        <img src="images/uoft.png" alt="UofT Logo" class="w-16 h-16 rounded-lg">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-white mb-1">Biomolecular Researcher</h3>
+                            <p class="text-gray-400 mb-2">University of Toronto</p>
+                            <p class="text-gray-300 mb-3">🔬 decoding how cells recognize and interpret regulatory sequences, under Dr. Tim Hughes</p>
+                            <p class="text-gray-500 text-sm">Skills: Single Cell Sequencing · Research · Bradford Assay · DNA Sequencing · DNA quantification · Gel-Shift Assay · Pipetting</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-white">
+    <section id="projects" class="py-20 bg-black">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-12 text-center font-serif projects-heading">Projects</h2>
+            <h2 class="text-4xl font-bold mb-12 text-center font-serif text-white">Projects</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Project 1 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden project-card">
+                <div class="bg-gray-900 rounded-xl shadow-xl overflow-hidden hover:scale-105 transition-all duration-300 border border-gray-800">
                     <img src="images/project1.png" alt="DotMatic Project" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-2">DotMatic</h3>
-                        <p class="text-gray-600 mb-4">A Braille Printer for young learners</p>
-                        <a href="https://github.com/NehaKasoju/DotMatic" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition duration-300">Learn More →</a>
+                        <h3 class="text-2xl font-bold mb-2 text-white">DotMatic</h3>
+                        <p class="text-gray-300 mb-4">A <span class="text-green-400">Braille Printer</span> for young learners</p>
+                        <a href="https://github.com/NehaKasoju/DotMatic" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 transition-colors duration-300">Learn More →</a>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden project-card">
+                <div class="bg-gray-900 rounded-xl shadow-xl overflow-hidden hover:scale-105 transition-all duration-300 border border-gray-800">
                     <img src="images/project2.png" alt="Operation Opportunities" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-2">Operation Opportunities</h3>
-                        <p class="text-gray-600 mb-4">Connecting 83,000+ Durham District School Board students with STEM opportunities</p>
-                        <a href="https://github.com/NehaKasoju/hawkhacks-2024" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition duration-300">Learn More →</a>
+                        <h3 class="text-2xl font-bold mb-2 text-white">Operation Opportunities</h3>
+                        <p class="text-gray-300 mb-4">Connecting <span class="text-pink-400">83,000+</span> Durham District School Board students with <span class="text-blue-400">STEM opportunities</span></p>
+                        <a href="https://github.com/NehaKasoju/hawkhacks-2024" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 transition-colors duration-300">Learn More →</a>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden project-card">
+                <div class="bg-gray-900 rounded-xl shadow-xl overflow-hidden hover:scale-105 transition-all duration-300 border border-gray-800">
                     <img src="images/project3.png" alt="Surgical Research" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-2">Surgical Research</h3>
-                        <p class="text-gray-600 mb-4">Improving healthcare accessibility and building equitable, precise surgical tools at Women's College Hospital</p>
-                        <a href="https://www.womenscollegehospital.ca/wrapping-up-summer-student-research-day-2023/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition duration-300">Learn More →</a>
+                        <h3 class="text-2xl font-bold mb-2 text-white">Surgical Research</h3>
+                        <p class="text-gray-300 mb-4">Improving healthcare accessibility and building <span class="text-yellow-400">equitable, precise surgical tools</span> at Women's College Hospital</p>
+                        <a href="https://www.womenscollegehospital.ca/wrapping-up-summer-student-research-day-2023/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 transition-colors duration-300">Learn More →</a>
                     </div>
                 </div>
 
                 <!-- Project 4: Menstrual Health App -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden project-card">
+                <div class="bg-gray-900 rounded-xl shadow-xl overflow-hidden hover:scale-105 transition-all duration-300 border border-gray-800">
                     <img src="images/period.png" alt="Menstrual Health App" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-2">Menstrual Health Tracker</h3>
-                        <p class="text-gray-600 mb-4">A private, friendly space for cycle and symptom tracking, using AI to recognice PCOS/PCOD</p>
-                        <a href="https://nehakasoju.github.io/periodApp/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition duration-300">Learn More →</a>
-                        <a href="https://github.com/NehaKasoju/periodApp" target="_blank" rel="noopener noreferrer" class="ml-4 text-blue-600 hover:text-blue-800 transition duration-300">GitHub →</a>
+                        <h3 class="text-2xl font-bold mb-2 text-white">Menstrual Health Tracker</h3>
+                        <p class="text-gray-300 mb-4">A private, friendly space for cycle and symptom tracking, using <span class="text-purple-400">AI</span> to recognize <span class="text-orange-400">PCOS/PCOD</span></p>
+                        <a href="https://nehakasoju.github.io/periodApp/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 transition-colors duration-300">Learn More →</a>
+                        <a href="https://github.com/NehaKasoju/periodApp" target="_blank" rel="noopener noreferrer" class="ml-4 text-cyan-400 hover:text-cyan-300 transition-colors duration-300">GitHub →</a>
                     </div>
                 </div>
 
                 <!-- Project 5: Period Ontario -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden project-card">
+                <div class="bg-gray-900 rounded-xl shadow-xl overflow-hidden hover:scale-105 transition-all duration-300 border border-gray-800">
                     <img src="images/periodOntario.png" alt="Period Ontario" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-2">Period Ontario</h3>
-                        <p class="text-gray-600 mb-4">Founded menstrual hygiene fundraiser, recruiting 350+ volunteers to distribute 13,000+ menstrual products annually across 10+ low-income schools and shelters, and presented at the Johns Hopkins Global Health Leaders Conference.</p>
-                        <a href="https://www.instagram.com/period_ontario/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition duration-300">Learn More →</a>
+                        <h3 class="text-2xl font-bold mb-2 text-white">Period Ontario</h3>
+                        <p class="text-gray-300 mb-4">Founded menstrual hygiene fundraiser, recruiting <span class="text-pink-400">350+ volunteers</span> to distribute <span class="text-green-400">13,000+ menstrual products</span> annually across <span class="text-blue-400">10+ low-income schools and shelters</span>, and presented at the Johns Hopkins Global Health Leaders Conference.</p>
+                        <a href="https://www.instagram.com/period_ontario/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 transition-colors duration-300">Learn More →</a>
                     </div>
                 </div>
 
                 <!-- Project 6: So You're Thinking of Vaginoplasty? -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden project-card">
+                <div class="bg-gray-900 rounded-xl shadow-xl overflow-hidden hover:scale-105 transition-all duration-300 border border-gray-800">
                     <img src="images/brochure.png" alt="So You're Thinking of Vaginoplasty?" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-2">So You're Thinking of Vaginoplasty?​</h3>
-                        <p class="text-gray-600 mb-4">Built and shipped a Women's College Hospital patient resource that supports 1,600+ patients.</p>
-                        <a href="https://www.youtube.com/watch?v=mtZT2uqluzQ" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition duration-300">Learn More →</a>
+                        <h3 class="text-2xl font-bold mb-2 text-white">So You're Thinking of Vaginoplasty?​</h3>
+                        <p class="text-gray-300 mb-4">Built and shipped a Women's College Hospital patient resource that supports <span class="text-yellow-400">1,600+ patients</span>.</p>
+                        <a href="https://www.youtube.com/watch?v=mtZT2uqluzQ" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 transition-colors duration-300">Learn More →</a>
                     </div>
                 </div>
             </div>
@@ -207,35 +273,35 @@
     </section>
 
     <!-- Awards Section -->
-    <section id="awards" class="py-20 bg-gray-50">
+    <section id="awards" class="py-20 bg-gray-900">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-12 text-center font-serif">Awards & Scholarships</h2>
+            <h2 class="text-4xl font-bold mb-12 text-center font-serif text-white">Awards & Scholarships</h2>
             <div class="max-w-4xl mx-auto">
-                <p class="text-2xl text-center mb-12 text-indigo-600">Over $190,000 in Scholarships Awarded</p>
+                <p class="text-2xl text-center mb-12 text-cyan-400">Over $190,000 in Scholarships Awarded</p>
                 <div class="grid md:grid-cols-2 gap-6">
-                    <div class="bg-white rounded-2xl shadow-lg p-6 hover-scale">
-                        <h3 class="font-bold text-xl">Queen's Chancellor's</h3>
-                        <p class="text-gray-600">$48,000</p>
+                    <div class="bg-gray-800 rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 border border-gray-700">
+                        <h3 class="font-bold text-xl text-white">Queen's Chancellor's</h3>
+                        <p class="text-gray-300">$48,000</p>
                     </div>
-                    <div class="bg-white rounded-2xl shadow-lg p-6 hover-scale">
-                        <h3 class="font-bold text-xl">Western National</h3>
-                        <p class="text-gray-600">$30,000</p>
+                    <div class="bg-gray-800 rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 border border-gray-700">
+                        <h3 class="font-bold text-xl text-white">Western National</h3>
+                        <p class="text-gray-300">$30,000</p>
                     </div>
-                    <div class="bg-white rounded-2xl shadow-lg p-6 hover-scale">
-                        <h3 class="font-bold text-xl">Ted Rogers Future Leaders</h3>
-                        <p class="text-gray-600">$26,800</p>
+                    <div class="bg-gray-800 rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 border border-gray-700">
+                        <h3 class="font-bold text-xl text-white">Ted Rogers Future Leaders</h3>
+                        <p class="text-gray-300">$26,800</p>
                     </div>
-                    <div class="bg-white rounded-2xl shadow-lg p-6 hover-scale">
-                        <h3 class="font-bold text-xl">A.J. and Muriel G. Billes</h3>
-                        <p class="text-gray-600">$10,000</p>
+                    <div class="bg-gray-800 rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 border border-gray-700">
+                        <h3 class="font-bold text-xl text-white">A.J. and Muriel G. Billes</h3>
+                        <p class="text-gray-300">$10,000</p>
                     </div>
-                    <div class="bg-white rounded-2xl shadow-lg p-6 hover-scale">
-                        <h3 class="font-bold text-xl">Foresters Financial</h3>
-                        <p class="text-gray-600">$10,000</p>
+                    <div class="bg-gray-800 rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 border border-gray-700">
+                        <h3 class="font-bold text-xl text-white">Foresters Financial</h3>
+                        <p class="text-gray-300">$10,000</p>
                     </div>
-                    <div class="bg-white rounded-2xl shadow-lg p-6 hover-scale">
-                        <h3 class="font-bold text-xl">First-Year Award</h3>
-                        <p class="text-gray-600">1/9,000 first-year students</p>
+                    <div class="bg-gray-800 rounded-2xl shadow-xl p-6 hover:scale-105 transition-transform duration-300 border border-gray-700">
+                        <h3 class="font-bold text-xl text-white">First-Year Award</h3>
+                        <p class="text-gray-300">1/9,000 first-year students</p>
                     </div>
                 </div>
             </div>
@@ -243,105 +309,134 @@
     </section>
 
     <!-- Hobbies Section -->
-    <section id="hobbies" class="py-20 bg-gray-50">
+    <section id="hobbies" class="py-20 bg-black">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-12 text-center font-serif hobbies-heading">Hobbies & Interests</h2>
-            <p class="text-xl text-center mb-12 italic">Outside of work, I thrive in creative and exploratory spaces.</p>
+            <h2 class="text-4xl font-bold mb-12 text-center font-serif text-white">Hobbies & Interests</h2>
+            <p class="text-xl text-center mb-12 italic text-gray-300">Outside of work, I thrive in creative and exploratory spaces.</p>
             <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <!-- Photography -->
-                <div class="bg-white rounded-2xl shadow-lg p-8 hover-scale">
+                <div class="bg-gray-900 rounded-2xl shadow-xl p-8 hover:scale-105 transition-transform duration-300 border border-gray-800">
                     <p class="text-4xl mb-4">📷</p>
-                    <h3 class="font-bold text-xl mb-2">Photography</h3>
-                    <p class="text-gray-600">Sharing my beautiful experiences thru pics :)</p>
+                    <h3 class="font-bold text-xl mb-2 text-white">Photography</h3>
+                    <p class="text-gray-300">Sharing my beautiful experiences thru pics :)</p>
                 </div>
 
                 <!-- Nature & Animals -->
-                <div class="bg-white rounded-2xl shadow-lg p-8 hover-scale">
+                <div class="bg-gray-900 rounded-2xl shadow-xl p-8 hover:scale-105 transition-transform duration-300 border border-gray-800">
                     <p class="text-4xl mb-4">🌿</p>
-                    <h3 class="font-bold text-xl mb-2">Nature & Animals</h3>
-                    <p class="text-gray-600">Enjoying nature walks, biking, and time with animals :3</p>
+                    <h3 class="font-bold text-xl mb-2 text-white">Nature & Animals</h3>
+                    <p class="text-gray-300">Enjoying nature walks, biking, and time with animals :3</p>
                 </div>
 
                 <!-- Travel -->
-                <div class="bg-white rounded-2xl shadow-lg p-8 hover-scale">
+                <div class="bg-gray-900 rounded-2xl shadow-xl p-8 hover:scale-105 transition-transform duration-300 border border-gray-800">
                     <p class="text-4xl mb-4">🌍</p>
-                    <h3 class="font-bold text-xl mb-2">Travel & Adventure</h3>
-                    <p class="text-gray-600">Exploring new places and even tried parasailing!</p>
+                    <h3 class="font-bold text-xl mb-2 text-white">Travel & Adventure</h3>
+                    <p class="text-gray-300">Exploring new places and even tried parasailing!</p>
                 </div>
 
                 <!-- Cooking -->
-                <div class="bg-white rounded-2xl shadow-lg p-8 hover-scale">
+                <div class="bg-gray-900 rounded-2xl shadow-xl p-8 hover:scale-105 transition-transform duration-300 border border-gray-800">
                     <p class="text-4xl mb-4">🍪</p>
-                    <h3 class="font-bold text-xl mb-2">Cooking</h3>
-                    <p class="text-gray-600">Cooking, baking, and trying new recipes</p>
+                    <h3 class="font-bold text-xl mb-2 text-white">Cooking</h3>
+                    <p class="text-gray-300">Cooking, baking, and trying new recipes</p>
                 </div>
 
                 <!-- Hackathons -->
-                <div class="bg-white rounded-2xl shadow-lg p-8 hover-scale">
+                <div class="bg-gray-900 rounded-2xl shadow-xl p-8 hover:scale-105 transition-transform duration-300 border border-gray-800">
                     <p class="text-4xl mb-4">💻</p>
-                    <h3 class="font-bold text-xl mb-2">Hackathons</h3>
-                    <p class="text-gray-600">Competing in events like Hack the North to meet cool people and build cool things</p>
+                    <h3 class="font-bold text-xl mb-2 text-white">Hackathons</h3>
+                    <p class="text-gray-300">Competing in events like Hack the North to meet cool people and build cool things</p>
                 </div>
 
                 <!-- Writing -->
-                <div class="bg-white rounded-2xl shadow-lg p-8 hover-scale">
+                <div class="bg-gray-900 rounded-2xl shadow-xl p-8 hover:scale-105 transition-transform duration-300 border border-gray-800">
                     <p class="text-4xl mb-4">✍️</p>
-                    <h3 class="font-bold text-xl mb-2">Content Creation</h3>
-                    <p class="text-gray-600">Writing blogs and making vlogs, to help inspire and help others :)</p>
+                    <h3 class="font-bold text-xl mb-2 text-white">Content Creation</h3>
+                    <p class="text-gray-300">Writing blogs and making vlogs, to help inspire and help others :)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center font-serif text-white">Blog</h2>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <!-- Post 1 -->
+                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-3 text-white">The Future of <span class="text-green-400">Surgical Robotics</span></h3>
+                    <p class="text-gray-300 mb-4">Exploring how <span class="text-blue-400">AI-powered systems</span> are revolutionizing precision medicine and transforming patient outcomes in modern healthcare.</p>
+                    <a href="#" class="text-cyan-400 hover:text-cyan-300 transition-colors duration-300">Read more →</a>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-3 text-white">Building <span class="text-purple-400">Autonomous Vehicles</span> at WATOnomous</h3>
+                    <p class="text-gray-300 mb-4">Behind the scenes of developing <span class="text-yellow-400">self-driving technology</span> and the challenges of creating safe, reliable autonomous systems.</p>
+                    <a href="#" class="text-cyan-400 hover:text-cyan-300 transition-colors duration-300">Read more →</a>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
+                    <h3 class="text-2xl font-bold mb-3 text-white">Advocating for <span class="text-pink-400">Student Rights</span> in Education</h3>
+                    <p class="text-gray-300 mb-4">My journey as Student Trustee representing <span class="text-orange-400">83,000+ students</span> and the impact of youth advocacy in public policy.</p>
+                    <a href="#" class="text-cyan-400 hover:text-cyan-300 transition-colors duration-300">Read more →</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white">
+    <section id="contact" class="py-20 bg-black">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-12 text-center font-serif connect-heading">Connect With Me</h2>
+            <h2 class="text-4xl font-bold mb-12 text-center font-serif text-white">Connect With Me</h2>
             <div class="max-w-2xl mx-auto">
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
                     <!-- LinkedIn -->
-                    <a href="http://www.linkedin.com/in/neha-kasoju" target="_blank" class="bg-white rounded-xl shadow-lg p-6 hover-scale flex flex-col items-center">
+                    <a href="http://www.linkedin.com/in/neha-kasoju" target="_blank" class="bg-gray-900 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 flex flex-col items-center border border-gray-800">
                         <p class="text-4xl mb-4">💼</p>
-                        <h3 class="font-bold text-lg">LinkedIn</h3>
+                        <h3 class="font-bold text-lg text-white">LinkedIn</h3>
                     </a>
 
                     <!-- GitHub -->
-                    <a href="https://github.com/NehaKasoju" target="_blank" class="bg-white rounded-xl shadow-lg p-6 hover-scale flex flex-col items-center">
+                    <a href="https://github.com/NehaKasoju" target="_blank" class="bg-gray-900 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 flex flex-col items-center border border-gray-800">
                         <p class="text-4xl mb-4">💻</p>
-                        <h3 class="font-bold text-lg">GitHub</h3>
+                        <h3 class="font-bold text-lg text-white">GitHub</h3>
                     </a>
 
                     <!-- X (Twitter) -->
-                    <a href="https://x.com/NehaKasoju" target="_blank" class="bg-white rounded-xl shadow-lg p-6 hover-scale flex flex-col items-center">
+                    <a href="https://x.com/NehaKasoju" target="_blank" class="bg-gray-900 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 flex flex-col items-center border border-gray-800">
                         <p class="text-4xl mb-4">🐦</p>
-                        <h3 class="font-bold text-lg">X</h3>
+                        <h3 class="font-bold text-lg text-white">X</h3>
                     </a>
 
                     <!-- Medium -->
-                    <a href="https://medium.com/@nehakasoju" target="_blank" class="bg-white rounded-xl shadow-lg p-6 hover-scale flex flex-col items-center">
+                    <a href="https://medium.com/@nehakasoju" target="_blank" class="bg-gray-900 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 flex flex-col items-center border border-gray-800">
                         <p class="text-4xl mb-4">✍️</p>
-                        <h3 class="font-bold text-lg">Medium</h3>
+                        <h3 class="font-bold text-lg text-white">Medium</h3>
                     </a>
 
                     <!-- YouTube -->
-                    <a href="https://www.youtube.com/@NehaKasoju" target="_blank" class="bg-white rounded-xl shadow-lg p-6 hover-scale flex flex-col items-center">
+                    <a href="https://www.youtube.com/@NehaKasoju" target="_blank" class="bg-gray-900 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 flex flex-col items-center border border-gray-800">
                         <p class="text-4xl mb-4">🎥</p>
-                        <h3 class="font-bold text-lg">YouTube</h3>
+                        <h3 class="font-bold text-lg text-white">YouTube</h3>
                     </a>
 
                     <!-- Email -->
-                    <a href="mailto:nehakasoju@gmail.com" class="bg-white rounded-xl shadow-lg p-6 hover-scale flex flex-col items-center">
+                    <a href="mailto:nehakasoju@gmail.com" class="bg-gray-900 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 flex flex-col items-center border border-gray-800">
                         <p class="text-4xl mb-4">📧</p>
-                        <h3 class="font-bold text-lg">Email</h3>
+                        <h3 class="font-bold text-lg text-white">Email</h3>
                     </a>
                 </div>
-                <p class="text-center mt-8 text-gray-600">Feel free to reach out! I'm always excited to connect and collaborate.</p>
+                <p class="text-center mt-8 text-gray-300">Feel free to reach out! I'm always excited to connect and collaborate.</p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8">
+    <footer class="bg-black text-white py-8 border-t border-gray-800">
         <div class="container mx-auto px-6 text-center">
         </div>
     </footer>

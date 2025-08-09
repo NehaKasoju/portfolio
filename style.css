@@ -4,117 +4,54 @@
     to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes twinkle {
-    0%, 100% { opacity: 0.3; }
-    50% { opacity: 1; }
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
-}
-
-@keyframes drift {
-    0% { transform: translateX(0) translateY(0); }
-    50% { transform: translateX(10px) translateY(10px); }
-    100% { transform: translateX(0) translateY(0); }
+@keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
 }
 
 /* Base Styles */
 :root {
-    --primary-color: #0a192f; /* Deep navy blue */
-    --secondary-color: #112240; /* Slightly lighter navy */
-    --accent-color: #c9a959; /* Muted gold */
-    --text-color: #e6f1ff; /* Off-white */
-    --text-secondary: #8892b0; /* Light gray */
-    --bg-color: #0a192f; /* Deep navy blue - same as primary */
-    --card-bg: rgba(17, 34, 64, 0.7); /* Semi-transparent navy */
-    --hover-color: #1d3461; /* Lighter navy for hover */
-    --border-color: rgba(201, 169, 89, 0.2); /* Subtle gold border */
-    --glass-bg: rgba(255, 255, 255, 0.05); /* Glassmorphism background */
-    --dark-text: #0a192f; /* Dark blue for specific text */
+    --primary-color: #000000; /* Black */
+    --secondary-color: #111827; /* Dark gray */
+    --accent-cyan: #06b6d4; /* Bright cyan */
+    --accent-pink: #ec4899; /* Bright pink */
+    --accent-green: #10b981; /* Bright green */
+    --accent-blue: #3b82f6; /* Bright blue */
+    --accent-yellow: #f59e0b; /* Bright yellow */
+    --accent-purple: #8b5cf6; /* Bright purple */
+    --accent-orange: #f97316; /* Bright orange */
+    --accent-red: #ef4444; /* Bright red */
+    --text-primary: #ffffff; /* White */
+    --text-secondary: #d1d5db; /* Light gray */
+    --text-muted: #9ca3af; /* Medium gray */
+    --border-color: #374151; /* Dark gray border */
+    --card-bg: #1f2937; /* Card background */
+    --hover-bg: #374151; /* Hover background */
 }
 
-/* Starfield Background */
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--bg-color);
-    z-index: -2;
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.star {
-    position: fixed;
-    background: white;
-    border-radius: 50%;
-    z-index: -1;
-    animation: twinkle 4s infinite;
-}
-
-.star:nth-child(1) { width: 1px; height: 1px; top: 10%; left: 20%; animation-delay: 0s; }
-.star:nth-child(2) { width: 2px; height: 2px; top: 20%; left: 50%; animation-delay: 0.5s; }
-.star:nth-child(3) { width: 1px; height: 1px; top: 30%; left: 80%; animation-delay: 1s; }
-.star:nth-child(4) { width: 2px; height: 2px; top: 40%; left: 30%; animation-delay: 1.5s; }
-.star:nth-child(5) { width: 1px; height: 1px; top: 50%; left: 70%; animation-delay: 2s; }
-.star:nth-child(6) { width: 2px; height: 2px; top: 60%; left: 40%; animation-delay: 2.5s; }
-.star:nth-child(7) { width: 1px; height: 1px; top: 70%; left: 90%; animation-delay: 3s; }
-.star:nth-child(8) { width: 2px; height: 2px; top: 80%; left: 60%; animation-delay: 3.5s; }
 
 body {
     font-family: 'Inter', sans-serif;
-    color: var(--text-color);
+    color: var(--text-primary);
     line-height: 1.6;
+    background-color: var(--primary-color);
     overflow-x: hidden;
-    visibility: visible !important;
-    background-color: var(--bg-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
-}
-
-/* Hero Section Styles */
-#about {
-    position: relative;
-    overflow: hidden;
-}
-
-#about .grid {
-    min-height: 100vh;
-}
-
-#about img {
-    transition: transform 0.5s ease;
-}
-
-#about:hover img {
-    transform: scale(1.05);
-}
-
-/* Hero Section Text Colors */
-#about .flex.items-center.justify-center .max-w-xl h1,
-#about .flex.items-center.justify-center .max-w-xl p,
-#about .flex.items-center.justify-center .max-w-xl .text-2xl,
-#about .flex.items-center.justify-center .max-w-xl .text-lg {
-    color: var(--dark-text) !important;
-}
-
-/* Section Animations */
-section {
-    visibility: visible;
-    opacity: 1;
-    transform: none;
-    background: var(--bg-color);
-    position: relative;
-}
-
-section:nth-child(even) {
-    background: var(--bg-color);
+    color: var(--text-primary);
 }
 
 /* Smooth scrolling */
@@ -122,75 +59,23 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Custom hover effects */
-.hover-scale {
-    transition: all 0.3s ease;
-}
-
-.hover-scale:hover {
-    transform: scale(1.02);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
-}
-
-/* Project card hover effects */
-.project-card {
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    background-color: var(--secondary-color) !important;
-    border: 1px solid var(--border-color);
-}
-
-.project-card a {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: var(--secondary-color);
-    color: var(--text-color) !important;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    margin-top: 8px;
-}
-
-.project-card a:hover {
-    background-color: var(--accent-color);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-.project-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-}
-
-.project-card:hover::before {
-    opacity: 1;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-}
-
-/* Navigation link hover effect */
+/* Navigation */
 nav {
-    background: var(--bg-color) !important;
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.95) !important;
+    backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border-color);
+    transition: all 0.3s ease;
 }
 
 nav a {
+    color: var(--text-primary);
     position: relative;
     transition: color 0.3s ease;
-    color: var(--text-color);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--accent-cyan);
 }
 
 nav a::after {
@@ -200,7 +85,7 @@ nav a::after {
     height: 2px;
     bottom: -4px;
     left: 0;
-    background-color: var(--primary-color);
+    background-color: var(--accent-cyan);
     transition: width 0.3s ease;
 }
 
@@ -208,97 +93,302 @@ nav a:hover::after {
     width: 100%;
 }
 
-nav a:hover {
-    color: var(--accent-color);
-}
-
-/* Form input focus effects */
-input:focus, textarea:focus {
-    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
-    outline: none;
-}
-
-/* Button hover effect */
-button {
-    transition: all 0.3s ease;
+/* Section Styling */
+section {
+    padding: 5rem 0;
     position: relative;
-    overflow: hidden;
 }
 
-button::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    transition: width 0.6s ease, height 0.6s ease;
-}
-
-button:hover::after {
-    width: 300px;
-    height: 300px;
-}
-
-button:hover {
+section:nth-child(even) {
     background-color: var(--secondary-color);
-    box-shadow: 0 4px 12px rgba(74, 20, 140, 0.3);
 }
 
-/* Experience card animations */
-.experience-card {
-    transition: all 0.3s ease;
-    cursor: pointer;
-    animation: slideUp 0.5s ease-out;
-    background-color: var(--secondary-color) !important;
+/* Hero Section */
+#about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+#about img {
+    transition: transform 0.5s ease;
+}
+
+#about:hover img {
+    transform: scale(1.02);
+}
+
+/* Card Styles */
+.bg-gray-900,
+.bg-gray-800 {
+    background-color: var(--card-bg) !important;
     border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
-.experience-card:hover {
+.bg-gray-900:hover,
+.bg-gray-800:hover {
+    transform: scale(1.02);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    border-color: var(--accent-cyan);
+}
+
+/* Experience Cards */
+#experience .bg-gray-800 {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#experience img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+#experience h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+}
+
+#experience p {
+    margin-bottom: 0.5rem;
+}
+
+#experience .text-gray-400 {
+    color: var(--text-secondary);
+}
+
+#experience .text-gray-300 {
+    color: var(--text-muted);
+}
+
+#experience .text-gray-500 {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+/* Project Cards */
+.project-card {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: var(--accent-cyan);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 
-/* Award card animations */
-.award-card {
+.project-card img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+}
+
+.project-card .p-6 {
+    padding: 1.5rem;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.project-card p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.project-card a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+    color: var(--accent-blue);
+}
+
+/* Blog Section */
+#blog .bg-gray-800 {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#blog h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+#blog p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+#blog a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#blog a:hover {
+    color: var(--accent-blue);
+}
+
+/* Contact Section */
+#contact .bg-gray-900 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
     transition: all 0.3s ease;
-    animation: scaleIn 0.5s ease-out;
-    background-color: var(--secondary-color) !important;
-    border: 1px solid var(--border-color);
 }
 
-.award-card:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+#contact .bg-gray-900:hover {
+    transform: scale(1.05);
+    border-color: var(--accent-cyan);
 }
 
-/* Hobby card animations */
-.hobby-card {
+#contact h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+#contact p {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+/* Hover Effects */
+.hover\:scale-105:hover {
+    transform: scale(1.05);
+}
+
+.hover\:scale-105 {
+    transition: transform 0.3s ease;
+}
+
+/* Transitions */
+.transition-all {
     transition: all 0.3s ease;
-    animation: fadeIn 0.5s ease-out;
+}
+
+.transition-transform {
+    transition: transform 0.3s ease;
+}
+
+.transition-colors {
+    transition: color 0.3s ease;
+}
+
+/* Duration */
+.duration-300 {
+    transition-duration: 300ms;
+}
+
+/* Accent Colors */
+.text-cyan-400 {
+    color: var(--accent-cyan) !important;
+}
+
+.text-pink-400 {
+    color: var(--accent-pink) !important;
+}
+
+.text-green-400 {
+    color: var(--accent-green) !important;
+}
+
+.text-blue-400 {
+    color: var(--accent-blue) !important;
+}
+
+.text-yellow-400 {
+    color: var(--accent-yellow) !important;
+}
+
+.text-purple-400 {
+    color: var(--accent-purple) !important;
+}
+
+.text-orange-400 {
+    color: var(--accent-orange) !important;
+}
+
+.text-red-400 {
+    color: var(--accent-red) !important;
+}
+
+/* Text Colors */
+.text-white {
+    color: var(--text-primary) !important;
+}
+
+.text-gray-300 {
+    color: var(--text-secondary) !important;
+}
+
+.text-gray-400 {
+    color: var(--text-muted) !important;
+}
+
+/* Background Colors */
+.bg-black {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-gray-900 {
     background-color: var(--secondary-color) !important;
-    border: 1px solid var(--border-color);
 }
 
-.hobby-card:hover {
-    transform: translateY(-5px) rotate(1deg);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+.bg-gray-800 {
+    background-color: var(--card-bg) !important;
 }
 
-/* Responsive adjustments */
+/* Border Colors */
+.border-gray-800 {
+    border-color: var(--border-color) !important;
+}
+
+.border-gray-700 {
+    border-color: var(--border-color) !important;
+}
+
+/* Shadow Effects */
+.shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-2xl {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .container {
         padding-left: 1rem;
         padding-right: 1rem;
     }
     
-    .project-card:hover {
-        transform: none;
-    }
-
     #about .grid {
         grid-template-columns: 1fr;
     }
@@ -306,272 +396,73 @@ button:hover {
     #about img {
         height: 50vh;
     }
+    
+    .project-card:hover {
+        transform: none;
+    }
+    
+    .bg-gray-900:hover,
+    .bg-gray-800:hover {
+        transform: none;
+    }
 }
 
-/* Custom scrollbar */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--card-bg);
+    background: var(--primary-color);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--secondary-color);
+    background: var(--border-color);
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--accent-color);
+    background: var(--accent-cyan);
 }
 
-/* Parallax effect for hero section */
-.parallax {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/* Focus States */
+a:focus,
+button:focus {
+    outline: 2px solid var(--accent-cyan);
+    outline-offset: 2px;
 }
 
-/* Text highlight effect */
-.highlight {
-    position: relative;
-    display: inline-block;
-}
-
-.highlight::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 30%;
-    background-color: var(--secondary-color);
-    opacity: 0.3;
-    z-index: -1;
-    transition: height 0.3s ease;
-}
-
-.highlight:hover::after {
-    height: 100%;
-}
-
-/* Add smooth section transitions */
-section {
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-/* Add JavaScript to handle scroll animations */
+/* Animation Classes */
 .animate-on-scroll {
-    opacity: 1;
-    transform: none;
+    opacity: 0;
+    transform: translateY(20px);
     transition: all 0.6s ease-out;
 }
 
 .animate-on-scroll.visible {
     opacity: 1;
-    transform: none;
+    transform: translateY(0);
 }
 
-/* Update card backgrounds */
-.bg-white {
-    background-color: var(--secondary-color) !important;
-    color: var(--text-color);
+/* Remove old styles */
+.starfield,
+.star {
+    display: none;
 }
 
-/* Update text colors */
+/* Ensure all text is properly colored */
+.bg-gray-900 *,
+.bg-gray-800 * {
+    color: inherit;
+}
+
+/* Override any conflicting Tailwind classes */
 .text-gray-600,
 .text-gray-700,
 .text-gray-900 {
-    color: var(--dark-text) !important;
+    color: var(--text-secondary) !important;
 }
 
 .text-indigo-600 {
-    color: var(--dark-text) !important;
-}
-
-/* Update footer */
-footer {
-    background: var(--bg-color) !important;
-    border-top: 1px solid var(--border-color);
-    padding: 1rem 0 !important; /* Reduced padding */
-}
-
-footer .container {
-    padding: 0.5rem 0 !important; /* Reduced container padding */
-}
-
-/* Update contact section cards */
-#contact .bg-white {
-    background: var(--secondary-color) !important;
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--border-color);
-}
-
-/* Glassmorphism Cards */
-.project-card, .bg-white, .experience-card, .award-card, .hobby-card {
-    background: var(--secondary-color) !important;
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--border-color);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
-
-/* Project Cards */
-.project-card {
-    transition: all 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--accent-color);
-    box-shadow: 0 12px 40px 0 rgba(201, 169, 89, 0.1);
-}
-
-.project-card a {
-    background: linear-gradient(45deg, var(--accent-color), #d4af37);
-    color: var(--bg-color) !important;
-    font-weight: 500;
-    border: none;
-    transition: all 0.3s ease;
-}
-
-.project-card a:hover {
-    background: linear-gradient(45deg, #d4af37, var(--accent-color));
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(201, 169, 89, 0.3);
-}
-
-/* Navigation */
-nav {
-    background: var(--bg-color) !important;
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border-color);
-}
-
-nav a {
-    color: var(--text-color);
-    position: relative;
-}
-
-nav a::after {
-    background-color: var(--accent-color);
-}
-
-nav a:hover {
-    color: var(--accent-color);
-}
-
-/* Section Styling */
-section {
-    background: transparent;
-    position: relative;
-}
-
-section:nth-child(even) {
-    background: linear-gradient(to bottom, rgba(17, 34, 64, 0.3), transparent);
-}
-
-/* Section Headings */
-#experience h2.text-4xl.font-bold.mb-12.text-center.font-serif,
-#awards h2.text-4xl.font-bold.mb-12.text-center.font-serif {
-    color: var(--dark-text) !important;
-}
-
-/* Update the background of the about section to be light */
-#about .flex.items-center.justify-center {
-    background-color: #f8f9fa !important;
-}
-
-/* Text Colors for Dark Backgrounds */
-.project-card p,
-.experience-card p,
-.experience-card li,
-.award-card p,
-.hobby-card p,
-#contact p,
-footer p,
-.text-gray-600,
-.text-gray-700,
-.text-gray-900 {
-    color: var(--text-color) !important;
-}
-
-/* Text Colors for Light Backgrounds */
-#about .flex.items-center.justify-center .max-w-xl h1,
-#about .flex.items-center.justify-center .max-w-xl p,
-#about .flex.items-center.justify-center .max-w-xl .text-2xl,
-#about .flex.items-center.justify-center .max-w-xl .text-lg {
-    color: var(--dark-text) !important;
-}
-
-/* Section Headings */
-h2.text-4xl.font-bold.mb-12.text-center.font-serif {
-    color: var(--text-color) !important;
-}
-
-/* Card Content */
-.project-card h3,
-.experience-card h3,
-.award-card h3,
-.hobby-card h3 {
-    color: var(--text-color) !important;
-}
-
-/* Navigation */
-nav a {
-    color: var(--text-color) !important;
-}
-
-/* Contact Section */
-#contact .bg-white h3,
-#contact .bg-white p {
-    color: var(--text-color) !important;
-}
-
-/* Update the background of the about section to be light */
-#about .flex.items-center.justify-center {
-    background-color: #f8f9fa !important;
-}
-
-/* Ensure all text in dark containers is white */
-.bg-white,
-.project-card,
-.experience-card,
-.award-card,
-.hobby-card,
-#contact .bg-white {
-    color: var(--text-color) !important;
-}
-
-/* Ensure all text in light containers is navy */
-#about .flex.items-center.justify-center {
-    color: var(--dark-text) !important;
-}
-
-/* New color rules for specific elements */
-.mechatronics-title {
-    color: var(--accent-color) !important;
-}
-
-.education-text,
-.elected-rep-text {
-    color: var(--text-color) !important;
-}
-
-.experience-card h3,
-.experience-card p,
-.experience-card li {
-    color: var(--text-color) !important;
-}
-
-.experience-card .highlight-keyword {
-    color: var(--accent-color) !important;
-    font-weight: 500;
-}
-
-.projects-heading,
-.hobbies-heading,
-.connect-heading {
-    color: var(--text-color) !important;
+    color: var(--accent-cyan) !important;
 }
