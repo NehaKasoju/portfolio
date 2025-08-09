@@ -3,173 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neha - Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>Neha Kasoju - Mechatronics Engineering Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
-<body class="bg-black text-white">
+<body class="bg-black text-white font-sans">
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-black/90 backdrop-blur-sm z-50 border-b border-gray-800">
+    <nav class="fixed w-full bg-black/90 backdrop-blur-sm z-50 border-b border-gray-800">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <h1 class="text-2xl font-bold">Neha</h1>
+                <div class="text-xl font-bold font-serif text-white">NK</div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#about" class="text-white hover:text-gray-300 transition-colors duration-300">About</a>
-                    <a href="#education" class="text-white hover:text-gray-300 transition-colors duration-300">Education</a>
                     <a href="#experience" class="text-white hover:text-gray-300 transition-colors duration-300">Experience</a>
                     <a href="#projects" class="text-white hover:text-gray-300 transition-colors duration-300">Projects</a>
-                    <a href="#awards" class="text-white hover:text-gray-300 transition-colors duration-300">Awards</a>
                     <a href="#hobbies" class="text-white hover:text-gray-300 transition-colors duration-300">Hobbies</a>
-                    <a href="#blog" class="text-white hover:text-gray-300 transition-colors duration-300">Blog</a>
                     <a href="#contact" class="text-white hover:text-gray-300 transition-colors duration-300">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="about" class="min-h-screen bg-black flex items-center justify-center py-20">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="flex justify-center">
-                    <img src="images/neha.jpg" alt="Neha" class="w-80 h-80 rounded-full object-cover shadow-2xl">
-                </div>
-                <div class="space-y-6">
-                    <h1 class="text-6xl font-bold text-white">Hi, I'm Neha</h1>
-                    <p class="text-xl text-gray-300 leading-relaxed">
-                        I'm passionate about creating meaning through innovative products and technologies. My journey spans from surgical tech to autonomous vehicles, driven by a deep curiosity about how things work and how we can make them better.
-                    </p>
-                    <p class="text-xl text-gray-300 leading-relaxed">
-                        Currently pursuing Mechatronics Engineering at the University of Waterloo, I'm excited to explore the intersection of mechanical, electrical, and software engineering to build solutions that make a real difference.
-                    </p>
-                </div>
+    <!-- Hero Section with Split Layout -->
+    <section id="about" class="min-h-screen flex items-center">
+        <div class="grid md:grid-cols-2 w-full">
+            <!-- Left Panel - Image -->
+            <div class="relative h-screen">
+                <img src="images/neha-bg.png" alt="Neha Kasoju" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent"></div>
             </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="py-20 bg-black">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-12 text-center font-serif text-white">Education</h2>
-            <div class="max-w-4xl mx-auto">
-                <div class="bg-gray-900 rounded-xl shadow-xl p-8 hover:scale-105 transition-all duration-300 border border-gray-700">
-                    <h3 class="text-2xl font-bold text-white mb-4">University of Waterloo</h3>
-                    <p class="text-gray-300 mb-2">Bachelor of Applied Science in Mechatronics Engineering</p>
-                    <p class="text-gray-300">Expected Graduation: 2029</p>
+            
+            <!-- Right Panel - About Text -->
+            <div class="flex items-center justify-center p-12 bg-black">
+                <div class="max-w-xl">
+                    <h1 class="text-5xl font-bold mb-6 font-serif text-white">Neha Kasoju</h1>
+                    <p class="text-2xl mb-8 text-gray-300">Mechatronics Engineering Student</p>
+                    <p class="text-lg italic text-gray-400 mb-6">
+                        • I build with meaning
+                    </p>
+                    <p class="text-lg mb-6 text-gray-300">
+                        • I live to build surgical tech, pushing the boundaries of surgical robotics
+                    </p>
+                    <p class="text-lg mb-6 text-gray-300">
+                        • Passionate about bringing innovative products and projects to market
+                    </p>
+                    <p class="text-lg text-gray-300">
+                        • Combine mechanical, software, and electrical skills to drive new healthcare innovations
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-20 bg-gray-900">
+    <section id="experience" class="py-20 bg-black">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold mb-12 text-center font-serif text-white">Experience</h2>
-            <div class="max-w-6xl mx-auto space-y-6">
+            <div class="max-w-4xl mx-auto space-y-6">
                 <!-- Undergraduate Research Assistant -->
-                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
+                <div class="bg-gray-900 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-gray-800">
                     <div class="flex items-start space-x-4">
                         <img src="images/orthotron.png" alt="ORTHOtron Logo" class="w-16 h-16 rounded-lg">
                         <div class="flex-1">
-                            <h3 class="text-xl font-bold text-white mb-1">Undergraduate Research Assistant</h3>
+                            <h3 class="text-xl font-bold mb-2 text-white">Undergraduate Research Assistant</h3>
                             <p class="text-gray-400 mb-2">Orthopaedic Mechatronics Lab (ORTHOtron)</p>
-                            <p class="text-gray-300 mb-3">incoming f25</p>
+                            <p class="text-gray-300">incoming f25</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Surgical Robotics Engineer -->
-                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
+                <div class="bg-gray-900 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-gray-800">
                     <div class="flex items-start space-x-4">
                         <img src="images/sickkids.png" alt="SickKids Logo" class="w-16 h-16 rounded-lg">
                         <div class="flex-1">
-                            <h3 class="text-xl font-bold text-white mb-1">Surgical Robotics Engineer</h3>
+                            <h3 class="text-xl font-bold mb-2 text-white">Surgical Robotics Engineer</h3>
                             <p class="text-gray-400 mb-2">The Hospital for Sick Children</p>
-                            <p class="text-gray-300 mb-3">🩺 designing & developing robotic systems for orthopaedic surgery</p>
+                            <p class="text-gray-300">🩺 designing and developing robotic systems for orthopaedic surgery</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Software Engineer -->
-                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
+                <div class="bg-gray-900 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-gray-800">
                     <div class="flex items-start space-x-4">
                         <img src="images/tartigrade.png" alt="Tartigrade Logo" class="w-16 h-16 rounded-lg">
                         <div class="flex-1">
-                            <h3 class="text-xl font-bold text-white mb-1">Software Engineer</h3>
+                            <h3 class="text-xl font-bold mb-2 text-white">Software Engineer</h3>
                             <p class="text-gray-400 mb-2">Tartigrade Ltd.</p>
-                            <p class="text-gray-300 mb-3">💻 full stack development building platforms & internal systems @ a hedge fund</p>
+                            <p class="text-gray-300">💻 full stack development building platforms and internal systems at a hedge fund</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Vehicle Platform Division Engineer -->
-                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
+                <div class="bg-gray-900 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-gray-800">
                     <div class="flex items-start space-x-4">
-                        <img src="images/wato.png" alt="WATO Logo" class="w-16 h-16 rounded-lg">
+                        <img src="images/wato.png" alt="WATOnomous Logo" class="w-16 h-16 rounded-lg">
                         <div class="flex-1">
-                            <h3 class="text-xl font-bold text-white mb-1">Vehicle Platform Division Engineer</h3>
+                            <h3 class="text-xl font-bold mb-2 text-white">Vehicle Platform Division Engineer</h3>
                             <p class="text-gray-400 mb-2">WATOnomous</p>
-                            <p class="text-gray-300 mb-3">🚗 building a self-driving car as part of the electrical team</p>
+                            <p class="text-gray-300">🚗 building a self-driving car as part of the electrical team</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Student Trustee -->
-                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
+                <div class="bg-gray-900 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-gray-800">
                     <div class="flex items-start space-x-4">
                         <img src="images/ddsb.png" alt="DDSB Logo" class="w-16 h-16 rounded-lg">
                         <div class="flex-1">
-                            <h3 class="text-xl font-bold text-white mb-1">Student Trustee</h3>
+                            <h3 class="text-xl font-bold mb-2 text-white">Student Trustee</h3>
                             <p class="text-gray-400 mb-2">Durham District School Board</p>
-                            <p class="text-gray-300 mb-3">🏫 represent 83,000+ students @ board level</p>
+                            <p class="text-gray-300">🏫 represent 83,000+ students at board level</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Quantum School -->
-                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
+                <div class="bg-gray-900 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-gray-800">
                     <div class="flex items-start space-x-4">
                         <img src="images/iqc.png" alt="IQC Logo" class="w-16 h-16 rounded-lg">
                         <div class="flex-1">
-                            <h3 class="text-xl font-bold text-white mb-1">Quantum School for Young Students (5.6% acceptance)</h3>
+                            <h3 class="text-xl font-bold mb-2 text-white">Quantum School for Young Students (5.6% acceptance)</h3>
                             <p class="text-gray-400 mb-2">Institute for Quantum Computing</p>
-                            <p class="text-gray-300 mb-3">🦄 1 of 42 students worldwide invited for the intensive & fully-funded study of quantum information</p>
+                            <p class="text-gray-300">🐈 1 of 42 students worldwide invited for the intensive and fully funded study of quantum information</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Surgical Researcher -->
-                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
+                <div class="bg-gray-900 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-gray-800">
                     <div class="flex items-start space-x-4">
                         <img src="images/wch.png" alt="WCH Logo" class="w-16 h-16 rounded-lg">
                         <div class="flex-1">
-                            <h3 class="text-xl font-bold text-white mb-1">Surgical Researcher</h3>
+                            <h3 class="text-xl font-bold mb-2 text-white">Surgical Researcher</h3>
                             <p class="text-gray-400 mb-2">Women's College Hospital</p>
-                            <p class="text-gray-300 mb-3">🩺 research & build tools for transition-surgery</p>
+                            <p class="text-gray-300">🩺 research and build tools for transition surgery</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Electrical Researcher -->
-                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
+                <div class="bg-gray-900 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-gray-800">
                     <div class="flex items-start space-x-4">
-                        <img src="images/york.png" alt="York Logo" class="w-16 h-16 rounded-lg">
+                        <img src="images/york.png" alt="York University Logo" class="w-16 h-16 rounded-lg">
                         <div class="flex-1">
-                            <h3 class="text-xl font-bold text-white mb-1">Electrical Researcher</h3>
+                            <h3 class="text-xl font-bold mb-2 text-white">Electrical Researcher</h3>
                             <p class="text-gray-400 mb-2">York University</p>
-                            <p class="text-gray-300 mb-3">🌿 building sensor circuits that collect real-time data for AI models tackling infectious disease outbreaks, under Dr. Jude Kong</p>
+                            <p class="text-gray-300">🦠 building sensor circuits that collect real-time data for AI models tackling infectious disease outbreaks, under Dr. Jude Kong</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Biomolecular Researcher -->
-                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
+                <div class="bg-gray-900 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-gray-800">
                     <div class="flex items-start space-x-4">
                         <img src="images/uoft.png" alt="UofT Logo" class="w-16 h-16 rounded-lg">
                         <div class="flex-1">
-                            <h3 class="text-xl font-bold text-white mb-1">Biomolecular Researcher</h3>
+                            <h3 class="text-xl font-bold mb-2 text-white">Biomolecular Researcher</h3>
                             <p class="text-gray-400 mb-2">University of Toronto</p>
-                            <p class="text-gray-300 mb-3">🔬 decoding how cells recognize and interpret regulatory sequences, under Dr. Tim Hughes</p>
+                            <p class="text-gray-300">🔬 decoding how cells recognize and interpret regulatory sequences, under Dr. Tim Hughes</p>
                         </div>
                     </div>
                 </div>
@@ -181,53 +176,75 @@
     <section id="projects" class="py-20 bg-black">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold mb-12 text-center font-serif text-white">Projects</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div class="project-card bg-gray-900 rounded-xl shadow-xl overflow-hidden hover:scale-105 transition-all duration-300 border border-gray-700">
-                    <img src="images/project1.jpg" alt="Project 1" class="w-full h-48 object-cover">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Solari Project -->
+                <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden project-card border border-gray-800">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-3">Autonomous Vehicle Navigation</h3>
-                        <p class="text-gray-300 mb-4">Developed advanced navigation algorithms for self-driving vehicles using ROS and computer vision techniques.</p>
-                        <a href="#" class="text-white hover:text-gray-300 transition-colors duration-300">Learn More →</a>
+                        <h3 class="text-2xl font-bold mb-2 text-white">Solari</h3>
+                        <p class="text-gray-300 mb-4">working AI-powered wearable for visually impaired users</p>
+                        <a href="https://devpost.com/software/aura-gpnklq" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 transition-colors duration-300 border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-black">Learn More →</a>
                     </div>
                 </div>
 
-                <div class="project-card bg-gray-900 rounded-xl shadow-xl overflow-hidden hover:scale-105 transition-all duration-300 border border-gray-700">
-                    <img src="images/project2.jpg" alt="Project 2" class="w-full h-48 object-cover">
+                <!-- Project 1 -->
+                <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden project-card border border-gray-800">
+                    <img src="images/project1.png" alt="DotMatic Project" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-3">Surgical Robot Control System</h3>
-                        <p class="text-gray-300 mb-4">Designed and implemented precision control systems for minimally invasive surgical procedures.</p>
-                        <a href="#" class="text-white hover:text-gray-300 transition-colors duration-300">Learn More →</a>
+                        <h3 class="text-2xl font-bold mb-2 text-white">DotMatic</h3>
+                        <p class="text-gray-300 mb-4">A Braille Printer for young learners</p>
+                        <a href="https://github.com/NehaKasoju/DotMatic" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 transition-colors duration-300 border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-black">Learn More →</a>
                     </div>
                 </div>
 
-                <div class="project-card bg-gray-900 rounded-xl shadow-xl overflow-hidden hover:scale-105 transition-all duration-300 border border-gray-700">
-                    <img src="images/project3.jpg" alt="Project 3" class="w-full h-48 object-cover">
+                <!-- Project 2 -->
+                <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden project-card border border-gray-800">
+                    <img src="images/project2.png" alt="Operation Opportunities" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-3">Smart Home Automation</h3>
-                        <p class="text-gray-300 mb-4">Built an IoT-based home automation system with voice control and machine learning capabilities.</p>
-                        <a href="#" class="text-white hover:text-gray-300 transition-colors duration-300">Learn More →</a>
+                        <h3 class="text-2xl font-bold mb-2 text-white">Operation Opportunities</h3>
+                        <p class="text-gray-300 mb-4">Connecting 83,000+ Durham District School Board students with STEM opportunities</p>
+                        <a href="https://github.com/NehaKasoju/hawkhacks-2024" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 transition-colors duration-300 border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-black">Learn More →</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Awards Section -->
-    <section id="awards" class="py-20 bg-gray-900">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-12 text-center font-serif text-white">Awards & Recognition</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
-                    <h3 class="text-xl font-bold text-white mb-3">Dean's Honour List</h3>
-                    <p class="text-gray-300">University of Waterloo Engineering</p>
+                <!-- Project 3 -->
+                <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden project-card border border-gray-800">
+                    <img src="images/project3.png" alt="Surgical Research" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Surgical Research</h3>
+                        <p class="text-gray-300 mb-4">Improving healthcare accessibility and building equitable, precise surgical tools at Women's College Hospital</p>
+                        <a href="https://www.womenscollegehospital.ca/wrapping-up-summer-student-research-day-2023/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 transition-colors duration-300 border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-black">Learn More →</a>
+                    </div>
                 </div>
-                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
-                    <h3 class="text-xl font-bold text-white mb-3">President's Scholarship</h3>
-                    <p class="text-gray-300">Academic Excellence Award</p>
+
+                <!-- Project 4: Menstrual Health App -->
+                <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden project-card border border-gray-800">
+                    <img src="images/period.png" alt="Menstrual Health App" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Menstrual Health Tracker</h3>
+                        <p class="text-gray-300 mb-4">A private, friendly space for cycle and symptom tracking, using AI to recognice PCOS/PCOD</p>
+                        <a href="https://nehakasoju.github.io/periodApp/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 transition-colors duration-300 border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-black">Learn More →</a>
+                        <a href="https://github.com/NehaKasoju/periodApp" target="_blank" rel="noopener noreferrer" class="ml-4 text-white hover:text-gray-300 transition-colors duration-300 border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-black">GitHub →</a>
+                    </div>
                 </div>
-                <div class="bg-gray-800 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
-                    <h3 class="text-xl font-bold text-white mb-3">Innovation Award</h3>
-                    <p class="text-gray-300">WATOnomous Team Recognition</p>
+
+                <!-- Project 5: Period Ontario -->
+                <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden project-card border border-gray-800">
+                    <img src="images/periodOntario.png" alt="Period Ontario" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Period Ontario</h3>
+                        <p class="text-gray-300 mb-4">Founded menstrual hygiene fundraiser, recruiting 350+ volunteers to distribute 13,000+ menstrual products annually across 10+ low-income schools and shelters, and presented at the Johns Hopkins Global Health Leaders Conference.</p>
+                        <a href="https://www.instagram.com/period_ontario/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 transition-colors duration-300 border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-black">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- Project 6: So You're Thinking of Vaginoplasty? -->
+                <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden project-card border border-gray-800">
+                    <img src="images/brochure.png" alt="So You're Thinking of Vaginoplasty?" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2 text-white">So You're Thinking of Vaginoplasty?​</h3>
+                        <p class="text-gray-300 mb-4">Built and shipped a Women's College Hospital patient resource that supports 1,600+ patients.</p>
+                        <a href="https://www.youtube.com/watch?v=mtZT2uqluzQ" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 transition-colors duration-300 border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-black">Learn More →</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -237,184 +254,122 @@
     <section id="hobbies" class="py-20 bg-black">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold mb-12 text-center font-serif text-white">Hobbies & Interests</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div class="bg-gray-900 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
-                    <h3 class="text-xl font-bold text-white mb-3">Reading</h3>
-                    <p class="text-gray-300">Science fiction, technical books, and philosophy</p>
+            <p class="text-xl text-center mb-12 italic text-gray-400">Outside of work, I thrive in creative and exploratory spaces.</p>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Photography -->
+                <div class="bg-gray-900 rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-gray-800">
+                    <p class="text-4xl mb-4">📷</p>
+                    <h3 class="font-bold text-xl mb-2 text-white">Photography</h3>
+                    <p class="text-gray-300">Sharing my beautiful experiences thru pics :)</p>
                 </div>
-                <div class="bg-gray-900 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
-                    <h3 class="text-xl font-bold text-white mb-3">Hiking</h3>
-                    <p class="text-gray-300">Exploring nature trails and outdoor adventures</p>
+
+                <!-- Nature & Animals -->
+                <div class="bg-gray-900 rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-gray-800">
+                    <p class="text-4xl mb-4">🌿</p>
+                    <h3 class="font-bold text-xl mb-2 text-white">Nature & Animals</h3>
+                    <p class="text-gray-300">Enjoying nature walks, biking, and time with animals :3</p>
                 </div>
-                <div class="bg-gray-900 rounded-xl shadow-xl p-6 hover:scale-105 transition-all duration-300 border border-gray-700">
-                    <h3 class="text-xl font-bold text-white mb-3">Cooking</h3>
-                    <p class="text-gray-300">Experimenting with new recipes and cuisines</p>
+
+                <!-- Travel -->
+                <div class="bg-gray-900 rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-gray-800">
+                    <p class="text-4xl mb-4">🌍</p>
+                    <h3 class="font-bold text-xl mb-2 text-white">Travel & Adventure</h3>
+                    <p class="text-gray-300">Exploring new places and even tried parasailing!</p>
+                </div>
+
+                <!-- Cooking -->
+                <div class="bg-gray-900 rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-gray-800">
+                    <p class="text-4xl mb-4">🍪</p>
+                    <h3 class="font-bold text-xl mb-2 text-white">Cooking</h3>
+                    <p class="text-gray-300">Cooking, baking, and trying new recipes</p>
+                </div>
+
+                <!-- Hackathons -->
+                <div class="bg-gray-900 rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-gray-800">
+                    <p class="text-4xl mb-4">💻</p>
+                    <h3 class="font-bold text-xl mb-2 text-white">Hackathons</h3>
+                    <p class="text-gray-300">Competing in events like Hack the North to meet cool people and build cool things</p>
+                </div>
+
+                <!-- Writing -->
+                <div class="bg-gray-900 rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-gray-800">
+                    <p class="text-4xl mb-4">✍️</p>
+                    <h3 class="font-bold text-xl mb-2 text-white">Content Creation</h3>
+                    <p class="text-gray-300">Writing blogs and making vlogs, to help inspire and help others :)</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Blog Section -->
-    <section id="blog" class="py-20 bg-gray-900">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-12 text-center font-serif text-white">Blog</h2>
-            <div class="max-w-4xl mx-auto space-y-8">
-                <!-- Post 1 -->
-                <div class="bg-gray-800 rounded-xl shadow-xl p-8 hover:scale-105 transition-all duration-300 border border-gray-700">
-                    <h3 class="text-2xl font-bold mb-4 text-white">Innovation Is Not Enough, Healthcare Needs Access Too</h3>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        Healthcare is advancing at a breathtaking pace. We are living in an era where robotics, AI-guided procedures, and advanced imaging are transforming the way clinicians treat disease. But there is an uncomfortable truth we need to face: access to healthcare innovation is not evenly distributed.
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        Some of the most groundbreaking medical devices are changing lives, but only for people in the right zip codes, the right hospitals, or the right healthcare systems. For millions of patients in rural areas, low-resource communities, or smaller hospitals, life-saving procedures are still out of reach.
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        This is a problem I care deeply about, not just as an engineer but as someone who has spent years working on healthcare advocacy. For five years, I led a province-wide menstrual hygiene fundraiser to help people access basic health products that should never be considered a luxury. Advocacy is a core part of who I am. It is the reason I served as a student trustee representing over 83,000 students, and it is the reason I am now working in medical technology, focused on surgical robotics and healthcare innovation.
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        But technology alone will not close the healthcare gap. We need to build for access, not just advancement.
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        Let's take interventional procedures as an example. In the United States, a large portion of needle-based procedures, such as biopsies, abscess drainages, and catheter placements, require highly specialized clinicians, often interventional radiologists. The problem is, 80% of U.S. counties do not have access to interventional radiologists. That means many patients cannot get the care they need close to home, or at all.
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        These are not luxury procedures. They are often critical for early cancer detection, infection management, and life-saving interventions. Yet access is limited by geography, specialist availability, and the complexity of the tools involved.
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        This is where medtech innovation has a new opportunity. We need to design intuitive, guided devices that lower the skill barrier so more clinicians, not just specialists, can safely perform procedures with confidence. This does not mean cutting corners on safety or replacing expertise. It means supporting generalists, rural clinicians, and frontline providers with the tools they need to offer the same quality of care found in urban hospitals.
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        There are incredible technologies already on the market. Surgical robotics has redefined what is possible in the operating room. The da Vinci Surgical System, for example, allows for ultra-precise minimally invasive surgery, but at a cost of 1.5 to 2.5 million dollars per robot, plus 170,000 dollars annually in maintenance fees and thousands more per case in disposable instruments. It is an extraordinary system, but for many hospitals, the math simply does not work. Similar cost barriers exist for imaging systems, where MRI machines can cost over 3 million dollars, and even basic ultrasound guidance platforms can cost tens of thousands.
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        These technologies are not the problem. In fact, they are marvels of engineering. But if we want to create healthcare systems that serve everyone, we need to complement these high-end solutions with affordable, scalable tools that work in diverse clinical settings.
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        This is not just an engineering challenge. It is a healthcare equity challenge. It is about building devices that are smaller, smarter, and easier to use while keeping costs manageable. It is about thoughtful design, human-centred interfaces, and systems that support clinicians wherever they are.
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        Personally, this is the kind of medtech innovation I want to help build. I am passionate about pushing the boundaries of technology, but just as passionate about making sure those boundaries do not leave people behind.
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        Healthcare is not just about having the newest device. It is about ensuring everyone can benefit from the technology we create.
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        As engineers, designers, and future healthcare leaders, we have a choice. We can build for the few, or we can build for the many. Advocacy is not separate from engineering; it is part of it. And if we do this right, the next wave of medtech will not just change how we treat patients. It will change who gets treated, too.
-                    </p>
-                </div>
 
-                <!-- Post 2 -->
-                <div class="bg-gray-800 rounded-xl shadow-xl p-8 hover:scale-105 transition-all duration-300 border border-gray-700">
-                    <h3 class="text-2xl font-bold mb-4 text-white">My First Year in Waterloo Mechatronics</h3>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        Hi, I'm Neha, a Mechatronics Engineering student at the University of Waterloo. I just wrapped up my first year and wanted to share what it was like. I remember doing hours of research, endless thinking, and countless coffee chats before choosing this program. So if you're reading this hoping to find some clarity, I hope it helps.
-                    </p>
-                    <h4 class="text-lg font-semibold text-white mt-6 mb-3">Settling In</h4>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        When I moved into UWP's Eby Hall, I was equal parts excited and nervous, ready to live alone for the first time, meet classmates, and learn.
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        During those early weeks, I'd wake up early to explore. I found trails, study spots, and wandered uptown Waterloo.
-                    </p>
-                    <h4 class="text-lg font-semibold text-white mt-6 mb-3">Finding Community</h4>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        Waterloo Engineering runs on a cohort system, which means you're with the same group of students for five years. Naturally, community matters …a lot.
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        Luckily, my class (Mechatronics 2029, Stream 8) was full of kind, curious, and driven people. Everyone I spoke to had something unique to share. Within the first week, I already felt like I belonged.
-                    </p>
-                    <h4 class="text-lg font-semibold text-white mt-6 mb-3">Getting Involved</h4>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        In Week 1, I joined Watonomous, an autonomous vehicle design team. I worked under the vehicle platform division and immediately met students who were not only skilled but also incredibly willing to mentor and share knowledge.
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        I also found community through Socratica's coworking sessions and the Engineering Society (EngSoc). These spaces were full of thoughtful, driven, and passionate people. Being around them helped me feel inspired and connected. If you're looking to find your crowd, take action. Join a club, show up to something, say hi. You never know where it'll lead.
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        And if you want something to exist, don't be afraid to take the lead and make it happen. Since the first week of school, I'd ask new friends, some I had just met, if they wanted to join me on my early 6 AM walks. To my surprise, a few did. I organized a girls' baking night to help build connection among the women in my class. None of it was fancy; it was just small moments of initiative that created space for the community to grow. Building community doesn't always require something big. Sometimes it's just about being the person who invites, who shows up, and who cares.
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        Courses in 1A included: CHE 102, MATH 115, MATH 116, MTE 100, MTE 121
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        A highlight was building a Braille printer using a LEGO EV3 robot in MTE 100.
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        Most professors were genuinely supportive. But as finals approached, it was clear many of us were struggling with CHE 102. Wanting to help, I reached out to another chemistry professor, and we held a three-hour crash course that covered the entire course. It made a big difference for a lot of us. If you notice something's missing, the best thing you can do is take initiative. Not just for yourself, but for those around you.
-                    </p>
-                    <h4 class="text-lg font-semibold text-white mt-6 mb-3">Studying & Finals</h4>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        Studying for finals was a learning curve. What worked for me was starting with a bit of theory and then diving right into practice. With repetition, concepts started to stick far better than they did through memorization alone. Don't be afraid to experiment with your study style.
-                    </p>
-                    <h4 class="text-lg font-semibold text-white mt-6 mb-3">The 1B Shift</h4>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        Heading into 1B, the coursework got deeper, and job searching was added to the mix.
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        This term, I made more time for joy: walks, gym sessions, dinners with friends, and side quests. These moments made all the difference.
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        Courses in 1B: MATH 118, MTE 111, MTE 119, MTE 120, MTE 140
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        MTE 120 (Circuits) was my favourite. I've found that mindset matters more than most people think. Tell yourself you want to be there, and the experience changes.
-                    </p>
-                    <h4 class="text-lg font-semibold text-white mt-6 mb-3">A Few Gentle Reminders</h4>
-                    <ul class="text-gray-300 mb-4 leading-relaxed list-disc list-inside space-y-2">
-                        <li>You're not alone. Your entire class is going through the same thing.</li>
-                        <li>You chose to be here. Remind yourself why.</li>
-                        <li>Breaks are essential.</li>
-                        <li>Yes, the schedules are busy. Living alone offers freedom, but also demands accountability. You have to make yourself show up to class, to deadlines, to yourself.</li>
-                    </ul>
-                    <h4 class="text-lg font-semibold text-white mt-6 mb-3">What I Learned</h4>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        Looking back, I'm proud of how much I've grown. I've gained knowledge in systems, circuits, and CAD. But more importantly, I've learned more about myself.
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        I'm deeply grateful to be part of this program, surrounded by peers and mentors who inspire me. And I'm excited for everything ahead.
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        If you made it this far, thank you!
-                    </p>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        If you have questions or want to chat, feel free to reach out. I'm always happy to help :)
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-black">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-12 text-center font-serif text-white">Get In Touch</h2>
-            <div class="max-w-4xl mx-auto text-center">
-                <div class="bg-gray-900 rounded-xl shadow-xl p-8 hover:scale-105 transition-all duration-300 border border-gray-700">
-                    <h3 class="text-2xl font-bold text-white mb-4">Let's Connect</h3>
-                    <p class="text-gray-300 mb-6 text-sm">Feel free to reach out! I'm always excited to connect and collaborate.</p>
-                    <div class="flex flex-wrap justify-center gap-6">
-                        <a href="mailto:neha@example.com" class="bg-gray-800 rounded-lg px-6 py-3 text-white hover:bg-gray-700 transition-colors duration-300 border border-gray-700">
-                            Email
-                        </a>
-                        <a href="https://linkedin.com/in/neha" class="bg-gray-800 rounded-lg px-6 py-3 text-white hover:bg-gray-700 transition-colors duration-300 border border-gray-700">
-                            LinkedIn
-                        </a>
-                        <a href="https://github.com/neha" class="bg-gray-800 rounded-lg px-6 py-3 text-white hover:bg-gray-700 transition-colors duration-300 border border-gray-700">
-                            GitHub
-                        </a>
-                    </div>
+            <h2 class="text-4xl font-bold mb-12 text-center font-serif text-white">Connect With Me</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                    <!-- LinkedIn -->
+                    <a href="http://www.linkedin.com/in/neha-kasoju" target="_blank" class="bg-gray-900 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 flex flex-col items-center border border-gray-800 hover:border-white">
+                        <p class="text-4xl mb-4">💼</p>
+                        <h3 class="font-bold text-lg text-white">LinkedIn</h3>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/NehaKasoju" target="_blank" class="bg-gray-900 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 flex flex-col items-center border border-gray-800 hover:border-white">
+                        <p class="text-4xl mb-4">💻</p>
+                        <h3 class="font-bold text-lg text-white">GitHub</h3>
+                    </a>
+
+                    <!-- X (Twitter) -->
+                    <a href="https://x.com/NehaKasoju" target="_blank" class="bg-gray-900 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 flex flex-col items-center border border-gray-800 hover:border-white">
+                        <p class="text-4xl mb-4">🐦</p>
+                        <h3 class="font-bold text-lg text-white">X</h3>
+                    </a>
+
+                    <!-- Medium -->
+                    <a href="https://medium.com/@nehakasoju" target="_blank" class="bg-gray-900 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 flex flex-col items-center border border-gray-800 hover:border-white">
+                        <p class="text-4xl mb-4">✍️</p>
+                        <h3 class="font-bold text-lg text-white">Medium</h3>
+                    </a>
+
+                    <!-- YouTube -->
+                    <a href="https://www.youtube.com/@NehaKasoju" target="_blank" class="bg-gray-900 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 flex flex-col items-center border border-gray-800 hover:border-white">
+                        <p class="text-4xl mb-4">🎥</p>
+                        <h3 class="font-bold text-lg text-white">YouTube</h3>
+                    </a>
+
+                    <!-- Email -->
+                    <a href="mailto:nehakasoju@gmail.com" class="bg-gray-900 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 flex flex-col items-center border border-gray-800 hover:border-white">
+                        <p class="text-4xl mb-4">📧</p>
+                        <h3 class="font-bold text-lg text-white">Email</h3>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black py-8 border-t border-gray-800">
+    <footer class="bg-black text-white py-8 border-t border-gray-800">
         <div class="container mx-auto px-6 text-center">
-            <p class="text-gray-400">&copy; 2024 Neha. All rights reserved.</p>
+            <p class="text-sm text-gray-400">If you have questions or want to chat, feel free to reach out. I'm always happy to help :)</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
