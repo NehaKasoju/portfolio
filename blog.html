@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neha's Thoughts, Opinions & Findings :)</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="bg-black text-white font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black/90 backdrop-blur-sm z-50 border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-xl font-bold font-serif text-white">
+                    <a href="index.html">NK</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#about"
+                        class="text-white hover:text-gray-300 transition-colors duration-300">About</a>
+                    <a href="index.html#experience"
+                        class="text-white hover:text-gray-300 transition-colors duration-300">Experience</a>
+                    <a href="index.html#projects"
+                        class="text-white hover:text-gray-300 transition-colors duration-300">Projects</a>
+                    <a href="index.html#hobbies"
+                        class="text-white hover:text-gray-300 transition-colors duration-300">Hobbies</a>
+                    <a href="blog.html" class="text-white border-b-2 border-white pb-1">Blog</a>
+                    <a href="index.html#contact"
+                        class="text-white hover:text-gray-300 transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="pt-32 pb-20 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl font-bold mb-6 font-serif text-white">Neha's Thoughts, Opinions & Findings :)</h1>
+                <p class="text-xl text-gray-400 mb-12">Sharing insights on healthcare innovation, technology, and making
+                    a difference</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <!-- Blog Post 1 -->
+                <article class="bg-gray-900 rounded-xl shadow-lg p-8 mb-12 border border-gray-800">
+                    <h2 class="text-3xl font-bold mb-4 text-white font-serif">Innovation Is Not Enough, Healthcare Needs
+                        Access Too</h2>
+                    <div class="text-gray-400 mb-6">
+                        <span class="text-sm">Healthcare • Innovation • Access</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Healthcare is advancing at a breathtaking pace. We are living in an era where robotics,
+                        AI-guided procedures, and advanced imaging are transforming the way clinicians treat disease.
+                        But there is an uncomfortable truth we need to face: access to healthcare innovation is not
+                        evenly distributed.
+                    </p>
+                    <button id="readMoreBtn"
+                        class="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors duration-300">
+                        Click to Read
+                    </button>
+
+                    <!-- Full Blog Content (Hidden by default) -->
+                    <div id="fullContent" class="hidden mt-8 prose prose-invert max-w-none">
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            Some of the most groundbreaking medical devices are changing lives, but only for people in
+                            the right zip codes, the right hospitals, or the right healthcare systems. For millions of
+                            patients in rural areas, low-resource communities, or smaller hospitals, life-saving
+                            procedures are still out of reach.
+                        </p>
+
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            This is a problem I care deeply about, not just as an engineer but as someone who has spent
+                            years working on healthcare advocacy. For five years, I led a province-wide menstrual
+                            hygiene fundraiser to help people access basic health products that should never be
+                            considered a luxury. Advocacy is a core part of who I am. It is the reason I served as a
+                            student trustee, and it is the reason I am now working in medical technology, focused on
+                            surgical robotics and healthcare innovation.
+                        </p>
+
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            But technology alone will not close the healthcare gap. We need to build for access, not
+                            just advancement.
+                        </p>
+
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            Let's take interventional procedures as an example. In the United States, a large portion of
+                            needle-based procedures, such as biopsies, abscess drainages, and catheter placements,
+                            require highly specialized clinicians, often interventional radiologists. The problem is,
+                            80% of U.S. counties do not have access to interventional radiologists. That means many
+                            patients cannot get the care they need close to home, or at all.
+                        </p>
+
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            These are not luxury procedures. They are often critical for early cancer detection,
+                            infection management, and life-saving interventions. Yet access is limited by geography,
+                            specialist availability, and the complexity of the tools involved.
+                        </p>
+
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            This is where medtech innovation has a new opportunity. We need to design intuitive, guided
+                            devices that lower the skill barrier, allowing more clinicians, not just specialists, to
+                            perform procedures with confidence and safety. This does not mean cutting corners on safety
+                            or replacing expertise. It means supporting generalists, rural clinicians, and frontline
+                            providers with the tools they need to deliver the same high-quality care found in urban
+                            hospitals.
+                        </p>
+
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            There are incredible technologies already on the market. Surgical robotics has redefined
+                            what is possible in the operating room. The da Vinci Surgical System, for example, allows
+                            for ultra-precise minimally invasive surgery, but at a cost of $1.5 to 2.5 million per
+                            robot, plus $170,000 annually in maintenance fees and thousands more per case in disposable
+                            instruments. It is an extraordinary system, but for many hospitals, the math simply does not
+                            work. Similar cost barriers exist for imaging systems, where MRI machines can cost over 3
+                            million dollars, and even basic ultrasound guidance platforms can cost tens of thousands.
+                        </p>
+
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            These technologies are not the problem. They are marvels of engineering. But if we want to
+                            create healthcare systems that serve everyone, we need to complement these high-end
+                            solutions with affordable, scalable tools that work in diverse clinical settings.
+                        </p>
+
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            This is not just an engineering challenge. It is a healthcare equity challenge. It is about
+                            building devices that are smaller, smarter, and easier to use while keeping costs
+                            manageable. It is about thoughtful design, human-centred interfaces, and systems that
+                            support clinicians wherever they are.
+                        </p>
+
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            Personally, this is the kind of medtech innovation I want to help build. I am passionate
+                            about pushing the boundaries of technology, but just as passionate about making sure those
+                            boundaries do not leave people behind.
+                        </p>
+
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            Healthcare is not just about having the newest device. It is about ensuring everyone can
+                            benefit from the technology we create.
+                        </p>
+
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            As engineers, designers, and future healthcare leaders, we have a choice. We can build for
+                            the few, or we can build for the many. Advocacy is not separate from engineering; it is part
+                            of it. And if we do this right, the next wave of medtech will not just change how we treat
+                            patients. It will change who gets treated, too.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-sm text-gray-400">If you have questions or want to chat, feel free to reach out. I'm always
+                happy to help :)</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle blog content visibility
+        document.getElementById('readMoreBtn').addEventListener('click', function () {
+            const content = document.getElementById('fullContent');
+            const button = document.getElementById('readMoreBtn');
+
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                button.textContent = 'Show Less';
+            } else {
+                content.classList.add('hidden');
+                button.textContent = 'Click to Read';
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
